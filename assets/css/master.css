@@ -1,13 +1,22 @@
 /*Veille */
 #source{
      min-height: 500px;
-  padding-top: 20px;
+  padding-top: 60px;
 /*  border-top: white solid 2px;*/
     background-color: #006ba8;
     background-image: -webkit-linear-gradient(100deg, #000000 50%, #006ba8 50%);
+    
 /*    013A6B*/
 }
-
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+.footerImg{
+    height: 50px;
+    width: 50px;
+}
 
 
 /* Section 1 */
