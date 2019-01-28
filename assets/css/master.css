@@ -1,3 +1,15 @@
+/*Veille */
+#source{
+     min-height: 500px;
+  padding-top: 20px;
+/*  border-top: white solid 2px;*/
+    background-color: #006ba8;
+    background-image: -webkit-linear-gradient(100deg, #000000 50%, #006ba8 50%);
+/*    013A6B*/
+}
+
+
+
 /* Section 1 */
 video#bgvid {
   position: fixed; right: 0; bottom: 0;
@@ -35,8 +47,18 @@ video#bgvid {
   border-top: white solid 2px;
 }
 #section2Veille{
+    padding-top: 5%;
     min-height: 900px;
-  background-color: #161415;
+    background-color: #161415;
+    background-image: -webkit-linear-gradient(100deg, #006ba8 50%, #000000 50%);
+}
+/*
+.partie2{
+    padding-top: 10%;
+}
+*/
+.contentVeille{
+    display: flex;
 }
 #section3Veille{
   background-color: #161415;
@@ -47,7 +69,9 @@ video#bgvid {
 .container-fluid{
   padding: 0px;
 }
-
+.stage-link:hover{
+    background-color: #006ba8;
+}
 section{
   width: 100%;
 }
@@ -490,14 +514,17 @@ blockquote {
     text-align: center;
     font-size: 30px;
 }
-#ImageCasque{background-image: url(../img/oculus-rift.png);
+#ImageCasque{
+/*    background-image: url(../img/oculus-rift.png);*/
     width: 400px;
-    background-size: 100% 100%;
+/*    background-size: 100% 100%;*/
     margin-right: 20px;
     margin-top: 50px;
     height: 250px;
+/*
     border-radius: 10px;
-/*    box-shadow: 5px 5px 5px;*/
+    box-shadow: 5px 5px 5px;
+*/
 }
 #graphique-image{
     width: 400px;
