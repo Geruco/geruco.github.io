@@ -91,7 +91,13 @@ video#bgvid {
   padding-top: 20px;
   border-top: white solid 2px;
 }
-#section7{
+.section7{
+  min-height: 900px;
+  background-color: #161415;
+  padding-left: 15%;
+  padding-top: 5%;
+}
+.section8{
   min-height: 900px;
   background-color: #161415;
   padding-left: 15%;
@@ -118,6 +124,9 @@ video#bgvid {
 #interet h3{
     font-size: 30px;
     text-decoration: underline;
+}
+.section7 .row{
+    height: 500px;
 }
 #section5{
   min-height: 900px;
