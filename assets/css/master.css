@@ -545,8 +545,9 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   position: absolute;
   bottom: -70px;
   left: -100px;
-  background-image: url('../img/gazon.jpg');
-  background-position: center;
+  background-image: url('../img/Photo_cv.PNG');
+  background-position:top;
+  background-size: contain;
   z-index: 10;
 }
 
