@@ -44,15 +44,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Grégor Loquet</a>
+          <a class="navbar-brand" onclick="document.getElementById('cadrePhoto').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Grégor Loquet</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#section2">A propos</a></li>
-            <li><a href="#section4">Formation</a></li>
-            <li><a href="#section5">Compétences</a></li>
-            <li><a href="#section6">Expérience professionnelle</a></li>
-            <li><a href="#section8">Passions</a></li>
+            <li><a onclick="document.getElementById('cadrePhoto').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">A propos</a></li>
+            <li><a onclick="document.getElementById('section4').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Formation</a></li>
+            <li><a onclick="document.getElementById('section5').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Compétences</a></li>
+            <li><a onclick="document.getElementById('section6').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Expérience professionnelle</a></li>
+            <li><a onclick="document.getElementById('section8').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Passions</a></li>
             <li> <a href="veille.html">Veille technologique</a></li>
 <!--            <li><a href="" data-toggle="modal" data-target="#modalcontact">Contact</a></li>-->
           </ul>
@@ -71,12 +71,13 @@
         <source id="video"src="assets/video/chamonix.mp4" type="video/mp4"/>
 
       </video>
+      <h1>Portfolio</h1>
     </section>
 
     <section id="section2" data-aos="fade-up">
       <div class="row">
         <div class="col-lg-1 col-lg-offset-6">
-          <div class="cadrephoto">
+          <div class="cadrephoto" id="cadrePhoto">
 
           </div>
         </div>
