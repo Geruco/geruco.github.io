@@ -627,61 +627,104 @@
     </div>
 
     <section class="section8" id="section8">
-      <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-11">
-          <div class="grid">
-            <figure class="effect-sadie">
-              <img src="assets/img/foot%20us.jpg" alt="img25"/>
-              <figcaption>
-                <h2>Football Américain</h2>
-                <p class="description">"It's not whether you get knocked down, it's whether you get up."- Vince Lombardi</p>
-              </figcaption>
-            </figure></div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-xs-11">
-            <div class="grid">
-              <figure class="effect-sadie">
-                <img src="assets/img/tennis.jpg" alt="img25"/>
-                <figcaption>
-                  <h2>Tennis</h2>
-                  <p class="description">Frappes face au vent.</p>
-                </figcaption>
-              </figure></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 col-xs-11 ">
-              <div class="grid">
-                <figure class="effect-sadie">
-                  <img src="assets/img/voyages.jpg" alt="img25"/>
-                  <figcaption>
-                    <h2>Voyages</h2>
-                    <p class="description">Should I stay or should I go ?</p>
-                  </figcaption>
-                </figure></div>
-              </div>
-              <div class="col-lg-2 col-md-6 col-sm-6 col-xs-11">
-                <div class="grid">
-                  <figure class="effect-sadie">
-                    <img src="assets/img/astronomie.jpg" alt="img25"/>
-                    <figcaption>
-                      <h2>Astronomie</h2>
-                      <p class="description">" Deux possibilités existent : soit nous sommes seuls dans l'univers, soit nous ne le sommes pas. Les deux hypothèses sont tout aussi effrayantes. " - Arthur Charles Clarke</p>
-                    </figcaption>
-                  </figure></div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-11">
-                  <div class="grid">
-                    <figure class="effect-sadie">
-                      <img src="assets/img/musique-mini.jpg" alt="img25"/>
-                      <figcaption>
-                        <h2>Musique</h2>
-                        <p class="description">“When I say or do something, I do it. I don’t give a damn what you think. I’m doing this for me.” – Eminem</p>
-                      </figcaption>
-                    </figure></div>
-                  </div>
-                </div>
-                <div class="separator"></div>
-              </section>
-            </div>
+        <!-- NEWS -->
+        <ul class="card-list">
+	
+          <li class="card">
+            <a class="card-image" style="background-image: url(assets/img/foot%20us.jpg);" data-image-full="assets/img/foot%20us.jpg">
+              <img src="assets/img/foot%20us.jpg" alt="Psychopomp" />
+            </a>
+            <a class="card-description">
+              <p>"It's not whether you get knocked down, it's whether you get up."</p>
+              <p>Vince Lombardi</p>
+            </a>
+          </li>
+          
+          <li class="card">
+            <a class="card-image" style="background-image: url(assets/img/tennis.jpg);" data-image-full="assets/img/tennis.jpg">
+              <img src="assets/img/tennis.jpg" alt="let's go" />
+            </a>
+            <a class="card-description">
+              <p>"Sometimes you have to accept that a guy played better on the day than you."</p>
+              <p>Roger Federer</p>
+            </a>
+          </li>
+          
+          <li class="card">
+            <a class="card-image" style="background-image: url(assets/img/voyages.jpg);" data-image-full="assets/img/voyages.jpg">
+              <img src="assets/img/voyages.jpg" alt="The Beautiful Game" />
+            </a>
+            <a class="card-description">
+              <p>"The world is a book and those who do not travel read only one page."</p>
+            </a>
+          </li>
+          
+          <li class="card">
+            <a class="card-image" style="background-image: url(assets/img/astronomie.jpg);" data-image-full="assets/img/astronomie.jpg">
+              <img src="assets/img/astronomie.jpg" alt="Jane Doe" />
+            </a>
+            <a class="card-description">
+              <p>"Deux possibilités existent : soit nous sommes seuls dans l'univers, soit nous ne le sommes pas. Les deux hypothèses sont tout aussi effrayantes. "</p>
+              <p>Arthur Charles Clarke</p>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card-image" style="background-image: url(assets/img/musique-mini.jpg);" data-image-full="assets/img/musique-mini.jpg">
+              <img src="assets/img/musique-mini.jpg" alt="img25" />
+            </a>
+            <a class="card-description">
+              <p>"When I say or do something, I do it. I don’t give a damn what you think. I’m doing this for me."</p>
+              <p>Eminem</p>
+            </a>
+          </li>
+
+          <li class="card">
+            <a class="card-image" style="background-image: url(assets/img/chess.jpeg);" data-image-full="assets/img/chess.jpeg">
+              <img src="assets/img/chess.jpeg" alt="img25" />
+            </a>
+            <a class="card-description">
+              <p>"Chess is beautiful enough to waste your life for."</p>
+              <p>Hans Ree</p>
+            </a>
+          </li>
+          
+        </ul>
+        <script>
+        window.addEventListener('load', function() {
+          
+          // setTimeout to simulate the delay from a real page load
+          setTimeout(lazyLoad, 1000);
+          
+        });
+
+        function lazyLoad() {
+          var card_images = document.querySelectorAll('.card-image');
+          
+          // loop over each card image
+          card_images.forEach(function(card_image) {
+            var image_url = card_image.getAttribute('data-image-full');
+            var content_image = card_image.querySelector('img');
+            
+            // change the src of the content image to load the new high res photo
+            content_image.src = image_url;
+            
+            // listen for load event when the new photo is finished loading
+            content_image.addEventListener('load', function() {
+              // swap out the visible background image with the new fully downloaded photo
+              card_image.style.backgroundImage = 'url(' + image_url + ')';
+              // add a class to remove the blur filter to smoothly transition the image change
+              card_image.className = card_image.className + ' is-loaded';
+            });
+            
+          });
+          
+        }
+        </script>
+        <!-- END NEWS -->
+      <div class="separator"></div>
+      </section>
+      </div>
 
             <!-- Bootstrap core JavaScript
             ================================================== -->
