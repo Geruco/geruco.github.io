@@ -4,7 +4,7 @@ window.addEventListener("load",function(){
         var subtitleStage1 = document.getElementById("subtitleStage1");
         subtitleStage1.innerHTML="Contenu du stage :";
         var para = document.getElementById("pStage1");
-        para.innerHTML = "Durant le stage de 5 semaines effectués chez Pixel Et Cicéro, le projet accompli était la création d'un tchat.<br /> Pour ce faire, j'ai commencé par connecter une interface client écrite en JavaScript à un serveur WebSocket écrit en Python. <br />Ensuite, j'ai ajouté une option permettant de synchroniser les localStorages de tout les utilisateurs. <br />Puis est arrivé le moment de la sécurisation. J'ai ainsi utilisé Keycloak, un outil permettant une sécurisation par authentification simplement.<br />J'ai donc du connecter Keycloak à la fois à l'interface clien et au serveur, et faire en sorte que le serveur ne réponde qu'aux utilisateurs authentifiés.";
+        para.innerHTML = "Durant le stage de 5 semaines effectués chez Pixel Et Cicéro, le projet accompli était la création d'un tchat.<br /> Pour ce faire, j'ai commencé par connecter une interface client JavaScript à un serveur WebSocket, développé en Python. <br />Ensuite, j'ai ajouté une option permettant de synchroniser les localStorages de tout les utilisateurs. <br />Puis est arrivé le moment de la sécurisation grâce au framework Keycloak, un outil permettant une sécurisation par authentification par Token.<br />J'ai donc du connecter Keycloak à la fois à l'interface client et au serveur, et faire en sorte que le serveur ne réponde qu'aux utilisateurs authentifiés.";
         var download = document.createElement("a");
         download.setAttribute("href","assets/dl/projet1.zip");
         download.setAttribute("download","Projet1");
@@ -29,7 +29,7 @@ window.addEventListener("load",function(){
         var subtitleStage2 = document.getElementById("subtitleStage2");
         subtitleStage2.innerHTML="Contenu du stage :";
         var para = document.getElementById("pStage2");
-        para.innerHTML = "Durant la deuxième année du BTS, j'ai été embauché en stage continu afin de créer des sites webs où toutes les pages sont gérées en javascript. C'est à dire un seul fichier html, et tout les \"liens\" sont en réalité reliés à des fonctions permettant de gérer le contenu de la page internet. <p><br/>Ce procédé est plus lourd au chargement de la page, mais il permet une plus grande fluidité une fois chargée. Je suis ainsi en train de créer un site pour l'entreprise CODIPLAS, puis je m'attelerai à la création du site de l'entreprise BIOLIGO.</p>";
+        para.innerHTML = "Durant la deuxième année du BTS, j'ai été embauché en alternance afin de créer des sites webs où toutes les pages sont gérées en javascript. C'est à dire un seul fichier html, et tout les \"liens\" sont en réalité reliés à des fonctions permettant de gérer le contenu de la page internet. <p><br/>Ce procédé est plus lourd au chargement de la page, mais il permet une plus grande fluidité une fois chargée. Je suis ainsi en train de créer un site pour l'entreprise CODIPLAS.</p>";
                 
         
     })
