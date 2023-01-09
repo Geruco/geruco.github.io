@@ -1,686 +1,1432 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
 
-  <title>CV Grégor Loquet</title>
+    <title>CV Grégor Loquet</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/master.css">
-<!--  <link rel="stylesheet" href="assets/css/contactform.css">-->
-  <script src="https://use.fontawesome.com/7bc8428a61.js"></script>
-    
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+    <!--  <link rel="stylesheet" href="assets/css/contactform.css">-->
+    <script src="https://use.fontawesome.com/7bc8428a61.js"></script>
+
     <!--    Animation on scroll-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Anton|Lobster" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Lobster"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
     <script src="assets/js/main.js"></script>
-</head>
-<body>
-    
+  </head>
+  <body>
     <script>
-    AOS.init();
+      AOS.init();
     </script>
-    
-  <div class="container">
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" onclick="document.getElementById('cadrePhoto').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Grégor Loquet</a>
+    <div class="container">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a
+              class="navbar-brand"
+              onclick="document.getElementById('cadrePhoto').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});"
+              >Grégor Loquet</a
+            >
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a
+                  onclick="document.getElementById('cadrePhoto').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});"
+                  >A propos</a
+                >
+              </li>
+              <li>
+                <a
+                  onclick="document.getElementById('section2').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});"
+                  >Formations</a
+                >
+              </li>
+              <li>
+                <a
+                  onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});"
+                  >Compétences</a
+                >
+              </li>
+              <li>
+                <a
+                  onclick="document.getElementById('section4').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});"
+                  >Projets</a
+                >
+              </li>
+              <li>
+                <a
+                  onclick="document.getElementById('section5').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});"
+                  >Passions</a
+                >
+              </li>
+              <li><a href="veille.html">Veille technologique</a></li>
+              <!--            <li><a href="" data-toggle="modal" data-target="#modalcontact">Contact</a></li>-->
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a onclick="document.getElementById('cadrePhoto').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">A propos</a></li>
-            <li><a onclick="document.getElementById('section4').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Formation</a></li>
-            <li><a onclick="document.getElementById('section5').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Compétences</a></li>
-            <li><a onclick="document.getElementById('section6').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Expérience professionnelle</a></li>
-            <li><a onclick="document.getElementById('section8').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'start'});">Passions</a></li>
-            <li> <a href="veille.html">Veille technologique</a></li>
-<!--            <li><a href="" data-toggle="modal" data-target="#modalcontact">Contact</a></li>-->
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div><!--/.container-fluid -->
-    </nav>
+        <!--/.container-fluid -->
+      </nav>
+    </div>
+    <!-- /container -->
 
+    <div class="container-fluid">
+      <section id="sectionVideo">
+        <video autoplay muted loop id="bgvid">
+          <source id="video" src="assets/video/chamonix.mp4" type="video/mp4" />
+        </video>
+      </section>
 
+      <section id="section1" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-1 col-lg-offset-6">
+            <div class="cadrephoto" id="cadrePhoto"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3 grade">
+            <h1><span class="web">Développeur</span></h1>
+            <h1 class="junior">Junior</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3">
+            <blockquote></blockquote>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 describ">
+            <p>
+              J'ai commencé la programmation à 17 ans. J'ai toujours été
+              passioné par l'informatique, puis un jour l'envie de créer mes
+              propres logiciels et sites web m'est apparu. Mon tout premier
+              travail a été de créer un site pour mon club de sport, mais je ne
+              l'ai jamais proposé, je n'en étais pas assez fier. Ce n'était que
+              ma première tentative de site web. J'ai par la suite commencé
+              divers projet personnels comme des sites internets ou des
+              applications mobiles afin de pratiquer et apprendre par moi-même
+              l'utilisation de certaines technologies, mais aucun d'entre eux
+              n'ont vu le jour. Aujourd'hui, je suis en train de développer avec
+              l'aide d'un ami un site sérieux que je compte bien déployer. Ce
+              projet à pour but d'offrir une documentation précise sur des mods
+              d'un jeu vidéo.
+            </p>
+            <p>
+              Le développement me plait car il me pousse à rechercher toujours
+              plus de rigueur dans mon travail. J'ai commencé ma formation
+              officiellement en 2017 avec un BTS SIO option Slam avant de
+              poursuivre ces études au Canada. Après avoir souhaité me
+              spécialiser dans la conception de logiciel, je me dirige désormais
+              majoritairement vers un poste de développeur Web back-end. Bien
+              que je dispose également de Compétences liées au front-end, ce
+              domaine m'intéresse moins.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  </div> <!-- /container -->
+      <section id="section2">
+        <div class="row">
+          <section class="timeline hidden-sm hidden-xs">
+            <ul>
+              <li>
+                <div>
+                  <time>2019 - 2023?</time>
+                  <p>
+                    Entrée en Baccalauréat informatique à l'Université du Québec
+                    à Chicoutimi
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2017 - 2019</time>
+                  <p>
+                    Stage puis alternance chez Pixel et Cicéro en tant que
+                    Développeur Web
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2017 - 2019</time>
+                  <p>Entrée à Ecoris en BTS SIO</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2016</time>
+                  <p>BAC S option Physique</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
 
+      <section class="visible-sm visible-xs">
+        <div class="col-lg-12 timeband">
+          <time>2019 - 2023?</time>
+          <p>
+            Entrée en Baccalauréat informatique à l'Université du Québec à
+            Chicoutimi
+          </p>
+        </div>
+        <div class="col-lg-12 timeband">
+          <time>2017 - 2019</time>
+          <p>
+            Stage puis alternance chez Pixel et Cicéro en tant que Développeur
+            Web
+          </p>
+        </div>
+        <div class="col-lg-12 timeband">
+          <time>2017 - 2019</time>
+          <p>Entrée à Ecoris en BTS SIO</p>
+        </div>
+        <div class="col-lg-12 timeband">
+          <time>2016</time>
+          <p>BAC S option Physique</p>
+        </div>
+      </section>
 
-  <div class="container-fluid">
-    <section id="section1">
-      <video autoplay muted loop id="bgvid">
-        <source id="video"src="assets/video/chamonix.mp4" type="video/mp4"/>
-
-      </video>
-      <h1>Portfolio</h1>
-    </section>
-
-    <section id="section2" data-aos="fade-up">
-      <div class="row">
-        <div class="col-lg-1 col-lg-offset-6">
-          <div class="cadrephoto" id="cadrePhoto">
-
-          </div>
+      <section id="section3">
+        <div class="row">
+          <h2>Langages</h2>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-lg-offset-3 grade">
-          <h1><span class="web">Developpeur</span> </h1>
-          <h1 class="junior">Junior</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-          <blockquote></blockquote>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 describ">
-          <p>J'ai commencé la programmation à 17 ans. J'ai toujours été passioné par l'informatique, puis un jour l'envie de créer mes propres logiciels et sites web m'est apparu. Mon tout premier travail a été de créer un site pour mon club de sport, mais je ne l'ai jamais proposé, je n'en étais pas assez fier. Ce n'était que ma première tentative de site web.</p>
-          <p>Le développement me plait car il me pousse à rechercher toujours plus de rigueur dans mon travail. J'ai commencé ma formation officiellement en 2017 avec un BTS SIO option Slam avant de poursuivre ces études au Canada. Après avoir souhaité me spécialiser dans la conception de logiciel, je me dirige désormais majoritairement vers un poste de développeur Web back-end.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="section4">
-      <div class="row">
-        <section class="timeline hidden-sm hidden-xs ">
-          <ul>
-            <li>
-              <div>
-                <time>2019 - ?</time>
-                <p>Entrée en Baccalauréat informatique à l'Université du Québec à Chicoutimi</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <time>2017 - 2019</time>
-                <p>Stage puis alternance chez Pixel et Cicéro en tant que Développeur Web </p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <time>2017 - 2019</time>
-                <p>Entrée à Ecoris en BTS SIO</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <time>2016</time>
-                <p>BAC S option Physique</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </section>
-
-    <section class="visible-sm visible-xs ">
-      <div class="col-lg-12 timeband">
-        <time>2019 - ?</time>
-        <p>Entrée en Baccalauréat informatique à l'Université du Québec à Chicoutimi</p>
-      </div>
-      <div class="col-lg-12 timeband">
-        <time>2017 - 2019</time>
-        <p>Stage puis alternance chez Pixel et Cicéro en tant que Développeur Web </p>
-      </div>
-      <div class="col-lg-12 timeband">
-        <time>2017 - 2019</time>
-        <p>Entrée à Ecoris en BTS SIO</p>
-      </div>
-      <div class="col-lg-12 timeband">
-        <time>2016</time>
-        <p>BAC S option Physique</p>
-      </div>
-    </section>
-
-    <section id="section5">
-      <div class="row">
-        <h2>Langages</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2  ">
-          <span data-toggle="modal" data-target="#modal-html"><a data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left"><div class="skills-items hvr-icon-bob">
-            HTML
-          </div></a></span>
-          <div class="modal fade bs-example-modal-lg" id="modal-html" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>HTML</h3>
-                </div>
-                <div class="modal-body">
-                  <p>Je crois que tout projet web commence avec un bon contenu, organisé et structuré avec HTML. Cela aide à mettre l'accent sur le contenu. Sans cela, tu risques de perdre de vue pourquoi les utilisateurs accèdent réellement à ton service.</p>
-                  <p>Avant toute conception, j'écris toujours du HTML solide.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-css"><div class="skills-items hvr-icon-bob">
-            CSS 3
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-css" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>CSS 3</h3>
-                </div>
-                <div class="modal-body">
-                  <p>Le CSS est le maquillage du Web, sans lui tout se ressemblerai sans aucune âme. Cela permet d'afficher des idées, sa philosophie.</p>
-                  <p>Le CSS est la poudre aux yeux mais reste cependant très important, il permet de diférencier un bon site d'un site parfait.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
-          <a data-toggle="modal" data-target="#modal-js"><div class="skills-items hvr-icon-bob">
-            Javascript
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-js" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Javascript</h3>
-                </div>
-                <div class="modal-body">
-                  <p>J'utilise Javascript pour les animations des éléments HTML ou remplacer dynamiquement du contenu.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2  ">
-          <a data-toggle="modal" data-target="#modal-sql"><div class="skills-items hvr-icon-bob">
-            MySQL
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-sql" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>MySQL</h3>
-                </div>
-                <div class="modal-body">
-                  <p>MySQL me permet d'automatiser ma base de données afin de rendre un projet le plus fonctionnel possible. Il est important que l'utilisateur ne ressent pas une latence durant les traitements des données.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-php"><div class="skills-items hvr-icon-bob">
-            PHP
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-php" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>PHP</h3>
-                </div>
-                <div class="modal-body">
-                  <p>Le PHP.. Sans ce langage magique, tous les sites web seraient statiques et beaucoup moins complet.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-python"><div class="skills-items hvr-icon-bob">
-            Python
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-python" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Python </h3>
-                </div>
-                <div class="modal-body">
-                  <p>Le python n'est pas un langage Web, mais un langage de programmation interprété orienté objet. Il me plait car il permet une syntaxe claire obligatoire car les retours chariots ont toutes leurs importances.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2  ">
-          <a data-toggle="modal" data-target="#modal-c"><div class="skills-items hvr-icon-bob">
-            C++
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-c" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>C++</h3>
-                </div>
-                <div class="modal-body">
-                  <p>C++ est un langage de programmation compilé permettant la programmation orientée objet et la programmation générique. Ses bonnes performances, et sa compatibilité avec le C en font un des langages de programmation les plus utilisés dans les applications où la performance est critique.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2>Framework / Librairies</h2>
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2  ">
-          <a data-toggle="modal" data-target="#modal-bootstrap"><div class="skills-items hvr-icon-bob">
-            Bootstrap
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-bootstrap" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Bootstrap</h3>
-                </div>
-                <div class="modal-body">
-                  <p>Mon premier framework. Une révolution pour rendre un site responsif rapidement et simplement.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-materialize"><div class="skills-items hvr-icon-bob">
-            Materialize
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-materialize" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Materialize</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Un framework équivalent à Bootstrap avec d'autres designs.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-jquery"><div class="skills-items hvr-icon-bob">
-            jQuery
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-jquery" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>jQuery</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Pour moi, jQuery est un puissant outil UI et UX. Associé avec les animations, transistions et transformations du CSS, tu peux donner vie à tes créations.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2  ">
-          <a data-toggle="modal" data-target="#modal-react"><div class="skills-items hvr-icon-bob">
-            React Native
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-react" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>React Native</h3>
-                </div>
-                <div class="modal-body">
-                  <p>React est un framework d'application mobile permettant de simplifier la création d'application mobile multi-plateformes.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h2>Systèmes d'exploitations</h2>
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2  ">
-          <a data-toggle="modal" data-target="#modal-windows"><div class="skills-items hvr-icon-bob">
-            Windows
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-windows" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Windows</h3>
-                </div>
-                <div class="modal-body">
-                    Le système d'exploitation sur lequel j'ai travaillé le plus régulièrement, mais aussi le système d'exploitation PC le plus utilisé.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-osx"><div class="skills-items hvr-icon-bob">
-            OSX
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-osx" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>OSX</h3>
-                </div>
-                <div class="modal-body">
-                    Vous êtes un pigeon ? Utilisez OSX !
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-linux"><div class="skills-items hvr-icon-bob">
-            Linux
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-linux" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Linux</h3>
-                </div>
-                <div class="modal-body">
-                    Vous êtes pauvre ? Utilisez Linux !
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <h2>Autres</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2  ">
-          <a data-toggle="modal" data-target="#modal-atom"><div class="skills-items hvr-icon-bob">
-            Atom
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-atom" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Atom</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Un éditeur de code permettant de facilement effectuer les commandes Git pour sauvegarder ou récupérer nos dossiers.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-git"><div class="skills-items hvr-icon-bob">
-            Git
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-git" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Git</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Un site internet permettant de sauvegarder les fichiers de code facilement en ligne. Seul bémol, si le service est gratuit, le code est publique.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-bracket"><div class="skills-items hvr-icon-bob">
-            Brackets
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-bracket" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Brackets</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Un autre éditeur de code, sûrement celui que j'utilise le plus, ayant un panel de langage supporté très grand, et dispose d'une fonction de visualisation en direct pour les pages Web, ce qui permet d'appliquer le CSS comme on le souhaite.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2  ">
-          <a data-toggle="modal" data-target="#modal-photoshop"><div class="skills-items hvr-icon-bob">
-            Photoshop
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-photoshop" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Photoshop</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Photoshop est un logiciel de retouche, de traitement et de dessin assisté par ordinateur, lancé en 1990 sur MacOS puis en 1992 sur Windows.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-illustrator"><div class="skills-items hvr-icon-bob">
-            Blender
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-illustrator" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>Blender</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Blender est un logiciel libre et gratuit de modélisation, d’animation et de rendu en 3D.<br/>
-                        Il propose des fonctions avancées de modélisation, d’animation 3D, et de rendu. Il gère aussi le montage vidéo non linéaire, la composition, la création nodale de matériaux, la création d’applications 3D interactives ou de jeux vidéo grâce à son moteur de jeu intégré (le Blender Game Engine), ainsi que diverses simulations physiques telles que les particules, les corps rigides, les corps souples et les fluides.
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2"
+          >
+            <span data-toggle="modal" data-target="#modal-html"
+              ><a
+                data-toggle="tooltip"
+                data-placement="left"
+                title=""
+                data-original-title="Tooltip on left"
+                ><div class="skills-items hvr-icon-bob">HTML</div></a
+              ></span
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-html"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>HTML</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Je crois que tout projet web commence avec un bon contenu,
+                      organisé et structuré avec HTML. Cela aide à mettre
+                      l'accent sur le contenu. Sans cela, tu risques de perdre
+                      de vue pourquoi les utilisateurs accèdent réellement à ton
+                      service. Avant toute conception, j'écris toujours du HTML
+                      solide.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-css"
+              ><div class="skills-items hvr-icon-bob">CSS 3</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-css"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>CSS 3</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Le CSS est le maquillage du Web, sans lui tout se
+                      ressemblerai sans aucune âme. Cela permet d'afficher des
+                      idées, sa philosophie.
+                    </p>
+                    <p>
+                      Le CSS est la poudre aux yeux mais reste cependant très
+                      important, il permet de diférencier un bon site d'un site
+                      parfait.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-js"
+              ><div class="skills-items hvr-icon-bob">Javascript</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-js"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Javascript</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Mon expérience avec JavaScript est assez grande étant un
+                      composant principal de tout projet web. J'aime ce langage
+                      pour sa simplicité et son vaste ensemble de possibilités
+                      malgré cette simplicité.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-          <a data-toggle="modal" data-target="#modal-indesign"><div class="skills-items hvr-icon-bob">
-            InDesign
-          </div></a>
-          <div class="modal fade bs-example-modal-lg" id="modal-indesign" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h3>InDesign</h3>
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2"
+          >
+            <a data-toggle="modal" data-target="#modal-sql"
+              ><div class="skills-items hvr-icon-bob">MySQL / Oracle</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-sql"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>MySQL / Oracle</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      MySQL et Oracle me permettent d'automatiser ma base de
+                      données afin de rendre un projet le plus fonctionnel
+                      possible. Il est important que l'utilisateur ne ressent
+                      pas une latence durant les traitements des données. <br />
+                      Bien que j'utilise majoritairement MySQL lors de mes
+                      projets personnels, j'ai été forcé d'apprendre et utiliser
+                      Oracle lors de certains cours, m'offrant une première
+                      expérience avec cette technologie.
+                    </p>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <p>Un logiciel Adobe permettant de créer le design de mes pages Internets avant de les appliquer en CSS.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-php"
+              ><div class="skills-items hvr-icon-bob">PHP</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-php"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>PHP</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Le php, un langage serveur que j'ai utilisé durant toute
+                      la durée de mon BTS afin de produire mon projet de fin
+                      d'année.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-python"
+              ><div class="skills-items hvr-icon-bob">Python</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-python"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Python</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Le python est un autre langage serveur que j'apprécie
+                      beaucoup. Il me plait car il oblige une syntaxe claire car
+                      les retours chariots ont toutes leurs importances. <br />
+                      J'ai utilisé d'abord ce langage dans des cours
+                      d'algorithmies, mais suite à un cours de technologie web
+                      avancées, il m'a été de développé un site en créant un
+                      serveur codé en python. J'ai beaucoup apprécié la
+                      bibliothèque Python-Flask et c'est désormais mon outil
+                      préféré pour créer mes sites internets.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2"
+          >
+            <a data-toggle="modal" data-target="#modal-c"
+              ><div class="skills-items hvr-icon-bob">C++</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-c"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>C++</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      C++ est un langage que j'ai uniquement utilisé pour du
+                      développement logiciel de petite envergure. Je connais les
+                      bases, mais je n'ai jamais expérimenté un réel
+                      développement dans ce langage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-Java"
+              ><div class="skills-items hvr-icon-bob">
+                Java / Android Studio
+              </div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-Java"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Java / Android Studio</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Je dispose d'un peu plus d'expérience dans le Java qu'en
+                      C++ par son utilisation dans le développement
+                      d'application avec Android Studio. J'ai pu travaillé sur
+                      deux applications mobiles de petites envergures en
+                      utilisant Android Studio et me suis servi à une seule
+                      occasion du Java pour développer une application web.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Framework / Librairies</h2>
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2"
+          >
+            <a data-toggle="modal" data-target="#modal-bootstrap"
+              ><div class="skills-items hvr-icon-bob">Bootstrap</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-bootstrap"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Bootstrap</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Mon premier framework. Une révolution pour rendre un site
+                      responsif rapidement et simplement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-materialize"
+              ><div class="skills-items hvr-icon-bob">Materialize</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-materialize"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Materialize</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Un framework équivalent à Bootstrap avec d'autres designs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    </section>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-jquery"
+              ><div class="skills-items hvr-icon-bob">jQuery</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-jquery"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>jQuery</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Pour moi, jQuery est un puissant outil UI et UX. Associé
+                      avec les animations, transistions et transformations du
+                      CSS, tu peux donner vie à tes créations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2"
+          >
+            <a data-toggle="modal" data-target="#modal-react"
+              ><div class="skills-items hvr-icon-bob">React Native</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-react"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>React Native</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      React est un framework d'application mobile permettant de
+                      simplifier la création d'application mobile
+                      multi-plateformes. <br />
+                      J'ai eu l'occasion de travailler par deux fois avec cette
+                      technologie pour des applications mobiles. Ce framework
+                      m'a plus par sa ressemblance aux langages web habituels où
+                      je dispose de plus d'expérience comparé au Java et Android
+                      Studio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-Flask"
+              ><div class="skills-items hvr-icon-bob">Python-Flask</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-Flask"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Python-Flask</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Python-Flask est une librairie contenant divers outils
+                      pour la création d'un serveur web en python. Depuis que
+                      j'ai appris son existence, il s'agit du ma manière
+                      préférée de développer un serveur web que j'ai utilisé à
+                      plusieurs reprises. Cette librairie est souvent combinée à
+                      la librairie sqlAlchemy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <section id="section6">
-<!--        <h3 class="sectionTitle">Professionalisation :</h3>-->
-      <div class="row">
-        <section class="timeline hidden-sm hidden-xs ">
-          <ul>
-<!--              <li></li>-->
-            <li>
-              <a href="#Stage2" data-toggle="modal" data-target="#Stage2"><div class="stage-link">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-sqlAlchemy"
+              ><div class="skills-items hvr-icon-bob">sqlAlchemy</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-sqlAlchemy"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>sqlAlchemy</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      sqlAlchemy est une librairie Python permettant de
+                      modéliser une base de données en différents objets python.
+                      C'est un outil simple et efficace pour se connecter et
+                      effectuer des actions sur sa base de données dans une
+                      application web. Bien que je trouvais son utilisation
+                      difficile au début, j'apprécie de plus en plus cette
+                      librairie avec le temps.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Systèmes d'exploitations</h2>
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2"
+          >
+            <a data-toggle="modal" data-target="#modal-windows"
+              ><div class="skills-items hvr-icon-bob">Windows</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-windows"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Windows</h3>
+                  </div>
+                  <div class="modal-body">
+                    Le système d'exploitation sur lequel j'ai travaillé le plus
+                    régulièrement, mais aussi le système d'exploitation PC le
+                    plus utilisé.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-osx"
+              ><div class="skills-items hvr-icon-bob">OSX</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-osx"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>OSX</h3>
+                  </div>
+                  <div class="modal-body">
+                    Vous êtes un pigeon ? Utilisez OSX !
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-linux"
+              ><div class="skills-items hvr-icon-bob">Linux</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-linux"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Linux</h3>
+                  </div>
+                  <div class="modal-body">
+                    Je dispose des bases d'utilisations de Linux grâce à de
+                    petits projets, mais je ne l'ai jamais utilisé sérieusement.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2>Autres</h2>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2"
+          >
+            <a data-toggle="modal" data-target="#modal-atom"
+              ><div class="skills-items hvr-icon-bob">Atom</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-atom"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Atom</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Un éditeur de code permettant de facilement effectuer les
+                      commandes Git pour sauvegarder ou récupérer nos dossiers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-git"
+              ><div class="skills-items hvr-icon-bob">Git</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-git"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Git / GitHub</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Un site internet permettant de sauvegarder les fichiers de
+                      code facilement en ligne. Seul bémol, si le service est
+                      gratuit, le code est publique.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-VSCode"
+              ><div class="skills-items hvr-icon-bob">Vs Code</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-VSCode"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Brackets</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Un autre éditeur de code, sûrement celui que j'utilise le
+                      plus, ayant un panel de langage supporté très grand, et
+                      disposant d'une grande bibliothèque d'outil à notre
+                      disposition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-2 col-md-3 col-sm-4 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-2"
+          >
+            <a data-toggle="modal" data-target="#modal-photoshop"
+              ><div class="skills-items hvr-icon-bob">Photoshop</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-photoshop"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Photoshop</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Photoshop est un logiciel de retouche, de traitement et de
+                      dessin assisté par ordinateur, lancé en 1990 sur MacOS
+                      puis en 1992 sur Windows.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-illustrator"
+              ><div class="skills-items hvr-icon-bob">Blender</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-illustrator"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>Blender</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Blender est un logiciel libre et gratuit de modélisation,
+                      d’animation et de rendu en 3D.<br />
+                      Il propose des fonctions avancées de modélisation,
+                      d’animation 3D, et de rendu. Il gère aussi le montage
+                      vidéo non linéaire, la composition, la création nodale de
+                      matériaux, la création d’applications 3D interactives ou
+                      de jeux vidéo grâce à son moteur de jeu intégré (le
+                      Blender Game Engine), ainsi que diverses simulations
+                      physiques telles que les particules, les corps rigides,
+                      les corps souples et les fluides.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+            <a data-toggle="modal" data-target="#modal-indesign"
+              ><div class="skills-items hvr-icon-bob">InDesign</div></a
+            >
+            <div
+              class="modal fade bs-example-modal-lg"
+              id="modal-indesign"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myLargeModalLabel"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3>InDesign</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Un logiciel Adobe permettant de créer le design de mes
+                      pages Internets avant de les appliquer en CSS.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4">
+        <div class="row">
+          <section class="visible-sm visible-xs">
+            <a href="#Projet1" data-toggle="modal" data-target="#Projet1">
+              <div class="col-lg-12 timeband">
+                <time>2022 - ?</time>
+                <p>Création d'un projet personnel de site internet.</p>
+              </div>
+            </a>
+            <a href="#Stage2" data-toggle="modal" data-target="#Stage2"
+              ><div class="col-lg-12 timeband">
                 <time>Stage de deuxième année</time>
                 <p>Création de site internet dynamiques.</p>
-              </div></a>
-            </li>
+              </div>
+            </a>
 
-            <li>
-              <a href="#Stage1" data-toggle="modal" data-target="#Stage1"><div class="stage-link">
+            <a href="#Stage1" data-toggle="modal" data-target="#Stage1">
+              <div class="col-lg-12 timeband">
                 <time>Stage de première année</time>
                 <p>Création d'un tchat en application Web.</p>
-              </div></a>
-            </li>
-            
-          </ul>
-        </section>
-        <p><br/></p>
-      </div>
-    </section>
-      
-    <!-- Modal -->
-    <div class="modal fade stage" id="Stage1" tabindex="-1" role="dialog" aria-labelledby="Stage1Label" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="Stage1Label">Stage de première année</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" id="stage1Body">
-                <h4 id="subtitleStage1">L'entreprise :</h4>
-               <p id="pStage1" class="paragraphe">
-                   Pixel Et Cicéro est un studio de création spécialisé en communication numérique et papier. Cette société est située à Argonay et est mise en place en 2016.<br/>
-                    L'entreprise est actuellement en cours de développement d'un logiciel de création et de partage de fichiers numériques.
-                </p>
-              <div class="PixelEtCicero"></div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" id="stageEntreprise1" class="btn">Entreprise</button>
-            <button type="button" id="stageContenu1" class="btn">Contenu du stage</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="modal fade" id="Stage2" tabindex="-1" role="dialog" aria-labelledby="Stage2Label" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="Stage2Label">Stage de deuxième année</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" id="stage2Body">
-                <h4 id="subtitleStage2">L'entreprise :</h4>
-               <p id="pStage2" class="paragraphe">
-                   Pixel Et Cicéro est un studio de création spécialisé en communication numérique et papier. Cette société est située à Argonay et est mise en place en 2016.<br/>
-                    L'entreprise est actuellement en cours de développement d'un logiciel de création et de partage de fichiers numériques.
-                </p>
-              <div class="PixelEtCicero"></div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" id="stageEntreprise2" class="btn">Entreprise</button>
-            <button type="button" id="stageContenu2" class="btn">Contenu du stage</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+              </div>
+            </a>
+          </section>
 
-    <section class="section8" id="section8">
+          <section class="timeline hidden-sm hidden-xs">
+            <ul>
+              <li>
+                <a href="#Projet1" data-toggle="modal" data-target="#Projet1"
+                  ><div class="stage-link">
+                    <time>2022 - ?</time>
+                    <p>Création d'un projet personnel de site internet.</p>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#Stage2" data-toggle="modal" data-target="#Stage2"
+                  ><div class="stage-link">
+                    <time>Stage de deuxième année</time>
+                    <p>Création de site internet dynamiques.</p>
+                  </div></a
+                >
+              </li>
+
+              <li>
+                <a href="#Stage1" data-toggle="modal" data-target="#Stage1"
+                  ><div class="stage-link">
+                    <time>Stage de première année</time>
+                    <p>Création d'un tchat en application Web.</p>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </section>
+          <p><br /></p>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade stage"
+        id="Projet1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="Projet1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Projet1Label">
+                Création d'un projet personnel de site internet.
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="stage1Body">
+              <h4 id="subtitleProjet1">Résumé du projet :</h4>
+              <p class="paragraphe">
+                Ce projet consiste à créer un site internet regroupant des
+                articles qui contiennent des informations détaillées à propos de
+                différents mods du jeu Divinity : Original Sin 2. Les articles
+                seront rédigés par des amis et moi-même. Ce site permettra
+                également aux utilisateurs de créer un compte pour commenter et
+                intéragir avec les articles, ainsi qu'utiliser d'autres
+                fonctions qui seront développées ultérieurement. <br />
+                La création de ce projet est effectuée par un ami s'occupant
+                principalement du front-end, et moi-même m'occupant du back-end.
+                Technologiquement parlant, le site utilise un serveur en python
+                utilisant les librairies Flask et sqlAlchemy et une base de
+                données MySQL.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade stage"
+        id="Stage1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="Stage1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Stage1Label">
+                Stage de première année
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="stage1Body">
+              <h4 id="subtitleStage1">L'entreprise :</h4>
+              <p id="pStage1" class="paragraphe">
+                Pixel Et Cicéro est un studio de création spécialisé en
+                communication numérique et papier. Cette société est située à
+                Argonay et est mise en place en 2016.<br />
+                L'entreprise est actuellement en cours de développement d'un
+                logiciel de création et de partage de fichiers numériques.
+              </p>
+              <div class="PixelEtCicero"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="stageEntreprise1" class="btn">
+                Entreprise
+              </button>
+              <button type="button" id="stageContenu1" class="btn">
+                Contenu du stage
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="Stage2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="Stage2Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="Stage2Label">
+                Stage de deuxième année
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="stage2Body">
+              <h4 id="subtitleStage2">L'entreprise :</h4>
+              <p id="pStage2" class="paragraphe">
+                Pixel Et Cicéro est un studio de création spécialisé en
+                communication numérique et papier. Cette société est située à
+                Argonay et est mise en place en 2016.<br />
+                L'entreprise est actuellement en cours de développement d'un
+                logiciel de création et de partage de fichiers numériques.
+              </p>
+              <div class="PixelEtCicero"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="stageEntreprise2" class="btn">
+                Entreprise
+              </button>
+              <button type="button" id="stageContenu2" class="btn">
+                Contenu du stage
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section5" id="section5">
         <!-- NEWS -->
         <ul class="card-list">
-	
           <li class="card">
-            <a class="card-image" style="background-image: url(assets/img/foot%20us.jpg);" data-image-full="assets/img/foot%20us.jpg">
+            <a
+              class="card-image"
+              style="background-image: url(assets/img/foot%20us.jpg)"
+              data-image-full="assets/img/foot%20us.jpg"
+            >
               <img src="assets/img/foot%20us.jpg" alt="Psychopomp" />
             </a>
             <a class="card-description">
-              <p>"It's not whether you get knocked down, it's whether you get up."</p>
+              <p>
+                "It's not whether you get knocked down, it's whether you get
+                up."
+              </p>
               <p>Vince Lombardi</p>
             </a>
           </li>
-          
+
           <li class="card">
-            <a class="card-image" style="background-image: url(assets/img/tennis.jpg);" data-image-full="assets/img/tennis.jpg">
+            <a
+              class="card-image"
+              style="background-image: url(assets/img/tennis.jpg)"
+              data-image-full="assets/img/tennis.jpg"
+            >
               <img src="assets/img/tennis.jpg" alt="let's go" />
             </a>
             <a class="card-description">
-              <p>"Sometimes you have to accept that a guy played better on the day than you."</p>
+              <p>
+                "Sometimes you have to accept that a guy played better on the
+                day than you."
+              </p>
               <p>Roger Federer</p>
             </a>
           </li>
-          
+
           <li class="card">
-            <a class="card-image" style="background-image: url(assets/img/voyages.jpg);" data-image-full="assets/img/voyages.jpg">
+            <a
+              class="card-image"
+              style="background-image: url(assets/img/voyages.jpg)"
+              data-image-full="assets/img/voyages.jpg"
+            >
               <img src="assets/img/voyages.jpg" alt="The Beautiful Game" />
             </a>
             <a class="card-description">
-              <p>"The world is a book and those who do not travel read only one page."</p>
+              <p>
+                "The world is a book and those who do not travel read only one
+                page."
+              </p>
             </a>
           </li>
-          
+
           <li class="card">
-            <a class="card-image" style="background-image: url(assets/img/astronomie.jpg);" data-image-full="assets/img/astronomie.jpg">
+            <a
+              class="card-image"
+              style="background-image: url(assets/img/astronomie.jpg)"
+              data-image-full="assets/img/astronomie.jpg"
+            >
               <img src="assets/img/astronomie.jpg" alt="Jane Doe" />
             </a>
             <a class="card-description">
-              <p>"Deux possibilités existent : soit nous sommes seuls dans l'univers, soit nous ne le sommes pas. Les deux hypothèses sont tout aussi effrayantes. "</p>
+              <p>
+                "Deux possibilités existent : soit nous sommes seuls dans
+                l'univers, soit nous ne le sommes pas. Les deux hypothèses sont
+                tout aussi effrayantes. "
+              </p>
               <p>Arthur Charles Clarke</p>
             </a>
           </li>
 
           <li class="card">
-            <a class="card-image" style="background-image: url(assets/img/musique-mini.jpg);" data-image-full="assets/img/musique-mini.jpg">
+            <a
+              class="card-image"
+              style="background-image: url(assets/img/musique-mini.jpg)"
+              data-image-full="assets/img/musique-mini.jpg"
+            >
               <img src="assets/img/musique-mini.jpg" alt="img25" />
             </a>
             <a class="card-description">
-              <p>"When I say or do something, I do it. I don’t give a damn what you think. I’m doing this for me."</p>
+              <p>
+                "When I say or do something, I do it. I don’t give a damn what
+                you think. I’m doing this for me."
+              </p>
               <p>Eminem</p>
             </a>
           </li>
 
           <li class="card">
-            <a class="card-image" style="background-image: url(assets/img/chess.jpeg);" data-image-full="assets/img/chess.jpeg">
+            <a
+              class="card-image"
+              style="background-image: url(assets/img/chess.jpeg)"
+              data-image-full="assets/img/chess.jpeg"
+            >
               <img src="assets/img/chess.jpeg" alt="img25" />
             </a>
             <a class="card-description">
@@ -688,97 +1434,105 @@
               <p>Hans Ree</p>
             </a>
           </li>
-          
         </ul>
         <script>
-        window.addEventListener('load', function() {
-          
-          // setTimeout to simulate the delay from a real page load
-          setTimeout(lazyLoad, 1000);
-          
-        });
-
-        function lazyLoad() {
-          var card_images = document.querySelectorAll('.card-image');
-          
-          // loop over each card image
-          card_images.forEach(function(card_image) {
-            var image_url = card_image.getAttribute('data-image-full');
-            var content_image = card_image.querySelector('img');
-            
-            // change the src of the content image to load the new high res photo
-            content_image.src = image_url;
-            
-            // listen for load event when the new photo is finished loading
-            content_image.addEventListener('load', function() {
-              // swap out the visible background image with the new fully downloaded photo
-              card_image.style.backgroundImage = 'url(' + image_url + ')';
-              // add a class to remove the blur filter to smoothly transition the image change
-              card_image.className = card_image.className + ' is-loaded';
-            });
-            
+          window.addEventListener("load", function () {
+            // setTimeout to simulate the delay from a real page load
+            setTimeout(lazyLoad, 1000);
           });
-          
-        }
+
+          function lazyLoad() {
+            var card_images = document.querySelectorAll(".card-image");
+
+            // loop over each card image
+            card_images.forEach(function (card_image) {
+              var image_url = card_image.getAttribute("data-image-full");
+              var content_image = card_image.querySelector("img");
+
+              // change the src of the content image to load the new high res photo
+              content_image.src = image_url;
+
+              // listen for load event when the new photo is finished loading
+              content_image.addEventListener("load", function () {
+                // swap out the visible background image with the new fully downloaded photo
+                card_image.style.backgroundImage = "url(" + image_url + ")";
+                // add a class to remove the blur filter to smoothly transition the image change
+                card_image.className = card_image.className + " is-loaded";
+              });
+            });
+          }
         </script>
         <!-- END NEWS -->
-      <div class="separator"></div>
+        <div class="separator"></div>
       </section>
-      </div>
+      <footer>
+        <a href="https://www.facebook.com/gregor.loquet" target="_blank"
+          ><img class="footerImg" src="assets/img/iconeFB.png"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/gr%C3%A9gor-loquet-a4262b14b/"
+          target="_blank"
+          ><img class="footerImg" src="assets/img/iconeLI.png"
+        /></a>
+      </footer>
+    </div>
 
-            <!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
             ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script src="assets/js/bootstrap.min.js"></script>
-            <script src="assets/js/quote.js"></script>
-            <a href="#" class="scrollToTop"><i class="fa fa-caret-up fa-4x" aria-hidden="true"></i></a>
-            <script>
-            //Code de la Timeline
-            function isElementInViewport(el) {
-              var rect = el.getBoundingClientRect();
-              return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-              );
-            }</script>
-            <script>
-            var items = document.querySelectorAll(".timeline li");
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/quote.js"></script>
+    <a href="#" class="scrollToTop"
+      ><i class="fa fa-caret-up fa-4x" aria-hidden="true"></i
+    ></a>
+    <script>
+      //Code de la Timeline
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+    </script>
+    <script>
+      var items = document.querySelectorAll(".timeline li");
 
-            // code for the isElementInViewport function
+      // code for the isElementInViewport function
 
-            function callbackFunc() {
-              for (var i = 0; i < items.length; i++) {
-                if (isElementInViewport(items[i])) {
-                  items[i].classList.add("in-view");
-                }
-              }
-            }
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
 
-            window.addEventListener("load", callbackFunc);
-            window.addEventListener("scroll", callbackFunc);
-            </script>
-            <script>
-                $(document).ready(function(){
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+    </script>
+    <script>
+      $(document).ready(function () {
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $(".scrollToTop").fadeIn();
+          } else {
+            $(".scrollToTop").fadeOut();
+          }
+        });
 
-                    //Check to see if the window is top if not then display button
-                    $(window).scroll(function(){
-                        if ($(this).scrollTop() > 100) {
-                            $('.scrollToTop').fadeIn();
-                        } else {
-                            $('.scrollToTop').fadeOut();
-                        }
-                    });
-
-                    //Click event to scroll to top
-                    $('.scrollToTop').click(function(){
-                        $('html, body').animate({scrollTop : 0},800);
-                        return false;
-                    });
-
-                });
-            </script>
-          </body>
-          </html>
+        //Click event to scroll to top
+        $(".scrollToTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

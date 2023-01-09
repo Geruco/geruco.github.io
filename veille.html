@@ -1,293 +1,599 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../favicon.ico" />
 
-  <title>Veille Grégor Loquet</title>
+    <title>Veille Grégor Loquet</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/master.css">
-<!--  <link rel="stylesheet" href="assets/css/contactform.css">-->
-  <script src="https://use.fontawesome.com/7bc8428a61.js"></script>
-    
-<!--    Animation on scroll-->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/veille.css" />
+    <!--  <link rel="stylesheet" href="assets/css/contactform.css">-->
+    <script src="https://use.fontawesome.com/7bc8428a61.js"></script>
+
+    <!--    Animation on scroll-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Anton|Lobster" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Lobster"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <script>
-    AOS.init();
+      AOS.init();
     </script>
-    
-  <div class="container">
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Grégor Loquet</a>
+    <div class="container">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Grégor Loquet</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html#section1">A propos</a></li>
+              <li><a href="index.html#section2">Formation</a></li>
+              <li><a href="index.html#section3">Compétences</a></li>
+              <li>
+                <a href="index.html#section4">Expérience professionnelle</a>
+              </li>
+              <li><a href="index.html#section5">Passions</a></li>
+              <li><a href="veille.html">Veille technologique</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html#section2">A propos</a></li>
-            <li><a href="index.html#section4">Formation</a></li>
-            <li><a href="index.html#section5">Compétences</a></li>
-            <li><a href="index.html#section6">Expérience professionnelle</a></li>
-            <li><a href="index.html#section7">Passions</a></li>
-            <li> <a href="veille.html">Veille technologique</a></li>
-<!--            <li><a href="" data-toggle="modal" data-target="#modalcontact">Contact</a></li>-->
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div><!--/.container-fluid -->
-    </nav>
+        <!--/.container-fluid -->
+      </nav>
+    </div>
+    <!-- /container -->
 
-  </div> <!-- /container -->
+    <div class="container-fluid">
+      <section id="section1">
+        <video autoplay muted loop id="bgvid">
+          <source id="video" src="assets/video/chamonix.mp4" type="video/mp4" />
+        </video>
+      </section>
 
-
-  <div class="container-fluid">
-        <section id="section1">
-          <video autoplay muted loop id="bgvid">
-            <source id="video"src="assets/video/chamonix.mp4" type="video/mp4"/>
-
-          </video>
-        </section>
-
-        <!-- Modal de contact -->
-        <div id="modalcontact" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+      <section id="section1Veille" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-1 col-lg-offset-6">
+            <div class="cadrephoto" id="cadrephoto"></div>
           </div>
         </div>
-
-        <section id="section1Veille" data-aos="fade-up">
-          <div class="row">
-            <div class="col-lg-1 col-lg-offset-6">
-              <div class="cadrephoto">
-
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3 grade">
+            <h1><span class="web">Développeur</span></h1>
+            <h1 class="junior">Junior</h1>
           </div>
-          <div class="row">
-            <div class="col-lg-6 col-lg-offset-3 grade">
-              <h1><span class="web">Developer</span> </h1>
-              <h1 class="junior">Junior</h1>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3">
+            <blockquote></blockquote>
           </div>
-          <div class="row">
-            <div class="col-lg-6 col-lg-offset-3">
-              <blockquote></blockquote>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 starter">
+            Dans le cadre du BTS SIO, les étudiants ont pour mission d'effectuer
+            une veille technologique. <br />La veille technologique consiste à
+            s’informer en continu des nouvelles d'un domaine particulier et de
+            leur commercialisation. <br />C’est aussi s’informer sur une
+            nouveauté, sur les inventions des concurrents mais aussi des
+            nouvelles technologies dans le but d’être le meilleur. <br />J'ai
+            alors choisi d'effectuer cette veille sur la réalité virtuelle.
           </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 starter">
-                    Dans le cadre du BTS SIO, les étudiants ont pour mission d'effctuer une veille technologique. <br />La veille technologique consiste à s’informer en continu des nouvelles d'un domaine particulier et de leur commercialisation. <br />C’est aussi s’informer sur une nouveauté, sur les inventions des concurrents mais aussi des nouvelles technologies dans le but d’être le meilleur. <br />J'ai alors choisi d'effectuer cette veille sur la réalité virtuelle.
-                </div>
-            </div>
-        </section>
+        </div>
+      </section>
     </div>
     <div>
-        <section id="separatorVideo"></section>
-        <section id="section2Veille">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-1">
-                <h2 class="partie" data-aos="fade-up">La réalité virtuelle, qu’est-ce que c’est ?</h2>
+      <section id="separatorVideo"></section>
+      <section id="section2Veille">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-1">
+            <h2 class="partie" data-aos="fade-up">
+              La réalité virtuelle, qu’est-ce que c’est ?
+            </h2>
 
-                <div class="contentVeille" data-aos="fade-up">
-                    <p>La réalité virtuelle est une technologie qui permet de plonger une personne dans un monde artificiel créé numériquement. <br/>
-                    Il peut s'agir d'une reproduction du monde réel ou bien d'un univers totalement imaginaire. L'expérience est à la fois visuelle, auditive et, dans certains cas, haptique avec la production d'un retour d'effets. Lorsque la personne est équipée des interfaces adéquates, comme des gants ou des vêtements, elle peut alors éprouver certaines sensations liées au toucher ou à certaines actions (coup, impact...).<br/>
-                    La réalité virtuelle passe par deux techonlogies différentes : les casques de réalité virtuelle et la réalité augmentée.</p>
-                </div>
-                <h2 class="partie" data-aos="fade-up">I) Les casques de vérités virtuelle :</h2>
-                <div class="contentVeille" data-aos="fade-up">
-                <p>Il existe pour le moment 5 casques de réalité virtuelle qui dominent le marché, chacun dispose d'avantage et d'inconvénient<br /> par rapport aux autres. Le plus connu est l'Oculus Rift, qui a été le premier casque qui a fait parlé de lui. <br />On retrouve ensuite l'HTC Vive (plusieurs modeles disponibles), le PlayStation VR, le Samsung Gear pour les mobiles ou encore,<br /> le moins cher mais aussi le moins efficace, le Google Cardboard. Le plus puissant est encore en création et est le <br />du Pimax 8K. C'est une révolution en matière de qualité d'image et de taux de raffraichissement de l'image. Le plus récent est un casque autonome (ne nécessite ni branchement ni capteur ni ordinateur), l'Oculus Quest créé par la société Oculus.</p>
-                <img id="ImageCasque" src="assets/img/oculus-rift.png"/>
-                </div>
-                
-                <h2 class="partie partie2" data-aos="fade-up">II) La réalité augmentée : </h2>
-                <div class="contentVeille" data-aos="fade-up">
-                    <p>La réalité augmentée est la superposition de la réalité et d'éléments (sons, images 2D, 3D, vidéos, etc.) calculés par un système <br />informatique en temps réel. <br />
-                    La réalité virtuelle est très utilisée dans la société actuelle. Elle sert à la fois pour créer des jeux vidéos, mais à aussi des rôles <br /> dans la vie de tous les jours. En effet, des développeurs réussisent à créer des applications utilisants la réalité virtuelle dans des buts médicaux <br />(par exemple, "cacher" les symptômes de la maladie de Parkinson (<a href="https://www.realite-virtuelle.com/maladie-parkinson-realite-augmentee"> https://www.realite-virtuelle.com/maladie-parkinson-realite-augmentee </a>), ou <br />encore des applications permettant des traductions de la langue des signes en temps réel (<a href="https://www.realite-virtuelle.com/arsl-application-ar-langue-des-signes">https://www.realite-virtuelle.com/arsl-application-ar-langue-des-signes</a>).</p>
-                </div>
-                
-                <h2 class="partie" data-aos="fade-up">III) La création de ces systèmes :</h2>
-                <div class="contentVeille" data-aos="fade-up">
-                <p>Créer une application en réalité virtuelle est à la portée de tous. Il existe déjà des outils pour créer facilement du contenu en réalité virtuelle, le moteur de jeu Unity est le premier exemple d’aide à la création.<br/>
+            <div class="contentVeille" data-aos="fade-up">
+              <p>
+                La réalité virtuelle est une technologie qui permet de plonger
+                une personne dans un monde artificiel créé numériquement. <br />
+                Il peut s'agir d'une reproduction du monde réel ou bien d'un
+                univers totalement imaginaire. L'expérience est à la fois
+                visuelle, auditive et, dans certains cas, haptique avec la
+                production d'un retour d'effets. Lorsque la personne est équipée
+                des interfaces adéquates, comme des gants ou des vêtements, elle
+                peut alors éprouver certaines sensations liées au toucher ou à
+                certaines actions (coup, impact...).<br />
+                La réalité virtuelle passe par deux techonlogies différentes :
+                les casques de réalité virtuelle et la réalité augmentée.
+              </p>
+            </div>
+            <h2 class="partie" data-aos="fade-up">
+              I) Les casques de vérités virtuelle :
+            </h2>
+            <div class="contentVeille" data-aos="fade-up">
+              <p>
+                Il existe pour le moment 5 casques de réalité virtuelle qui
+                dominent le marché, chacun dispose d'avantage et
+                d'inconvénient<br />
+                par rapport aux autres. Le plus connu est l'Oculus Rift, qui a
+                été le premier casque qui a fait parlé de lui. <br />On retrouve
+                ensuite l'HTC Vive (plusieurs modeles disponibles), le
+                PlayStation VR, le Samsung Gear pour les mobiles ou encore,<br />
+                le moins cher mais aussi le moins efficace, le Google Cardboard.
+                Le plus puissant est encore en création et est le <br />du Pimax
+                8K. C'est une révolution en matière de qualité d'image et de
+                taux de raffraichissement de l'image. Le plus récent est un
+                casque autonome (ne nécessite ni branchement ni capteur ni
+                ordinateur), l'Oculus Quest créé par la société Oculus.
+              </p>
+              <img id="ImageCasque" src="assets/img/oculus-rift.png" />
+            </div>
 
-                Ce moteur de création 3D est largement utilisé dans le jeu vidéo indépendant notamment et facilite le travail de création en 3D. Unity va alors de façon incroyable vous faciliter la vie et pour expliquer de façon barbare, vous n’aurez en vérité qu’à créer votre environnement 3D comme n’importe quel autre pour ensuite compiler votre projet pour la réalité virtuelle.<br/>
+            <h2 class="partie partie2" data-aos="fade-up">
+              II) La réalité augmentée :
+            </h2>
+            <div class="contentVeille" data-aos="fade-up">
+              <p>
+                La réalité augmentée est la superposition de la réalité et
+                d'éléments (sons, images 2D, 3D, vidéos, etc.) calculés par un
+                système <br />informatique en temps réel. <br />
+                La réalité virtuelle est très utilisée dans la société actuelle.
+                Elle sert à la fois pour créer des jeux vidéos, mais à aussi des
+                rôles <br />
+                dans la vie de tous les jours. En effet, des développeurs
+                réussisent à créer des applications utilisants la réalité
+                virtuelle dans des buts médicaux <br />(par exemple, "cacher"
+                les symptômes de la maladie de Parkinson (<a
+                  href="https://www.realite-virtuelle.com/maladie-parkinson-realite-augmentee"
+                >
+                  https://www.realite-virtuelle.com/maladie-parkinson-realite-augmentee </a
+                >), ou <br />encore des applications permettant des traductions
+                de la langue des signes en temps réel (<a
+                  href="https://www.realite-virtuelle.com/arsl-application-ar-langue-des-signes"
+                  >https://www.realite-virtuelle.com/arsl-application-ar-langue-des-signes</a
+                >).
+              </p>
+            </div>
 
-                C# est le langage préféré des développeurs informatiques quand il s’agit de projets de réalité virtuelle ou augmentée.<br/>
+            <h2 class="partie" data-aos="fade-up">
+              III) La création de ces systèmes :
+            </h2>
+            <div class="contentVeille" data-aos="fade-up">
+              <p>
+                Créer une application en réalité virtuelle est à la portée de
+                tous. Il existe déjà des outils pour créer facilement du contenu
+                en réalité virtuelle, le moteur de jeu Unity est le premier
+                exemple d’aide à la création.<br />
 
-                En effet, environ 30% des développeurs préféreraient ce langage par rapport à d’autres comme Java, JavaScript ou encore Python. Le langage C# est supporté par le moteur de jeu vidéo multi-plateforme Unity. Ainsi, il est plus facile adapté à la création de jeux vidéos en réalité virtuelle ou augmentée. <br/>
-                De même, pour la création des modèles 3d, les développeurs apprécient grandement l'utilisation du module OpenGL. <br/>
-                <br/>
-                (Source : <a href="https://www.360natives.com/developpeurs-17042017/">https://www.360natives.com/developpeurs-17042017/</a>)
+                Ce moteur de création 3D est largement utilisé dans le jeu vidéo
+                indépendant notamment et facilite le travail de création en 3D.
+                Unity va alors de façon incroyable vous faciliter la vie et pour
+                expliquer de façon barbare, vous n’aurez en vérité qu’à créer
+                votre environnement 3D comme n’importe quel autre pour ensuite
+                compiler votre projet pour la réalité virtuelle.<br />
+
+                C# est le langage préféré des développeurs informatiques quand
+                il s’agit de projets de réalité virtuelle ou augmentée.<br />
+
+                En effet, environ 30% des développeurs préféreraient ce langage
+                par rapport à d’autres comme Java, JavaScript ou encore Python.
+                Le langage C# est supporté par le moteur de jeu vidéo
+                multi-plateforme Unity. Ainsi, il est plus facile adapté à la
+                création de jeux vidéos en réalité virtuelle ou augmentée.
+                <br />
+                De même, pour la création des modèles 3d, les développeurs
+                apprécient grandement l'utilisation du module OpenGL. <br />
+                <br />
+                (Source :
+                <a href="https://www.360natives.com/developpeurs-17042017/"
+                  >https://www.360natives.com/developpeurs-17042017/</a
+                >)
+              </p>
+              <img id="graphique-image" src="assets/img/graphique-lang.jpg" />
+              <!--                <div id="graphique-langage"></div>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="nouveaute">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2 class="partie" data-aos="fade-up">
+            IV) Les nouveautés du domaine
+          </h2>
+          <div class="contentArticle">
+            <article>
+              <h4>Lentilles connectés de Sony</h4>
+              <img class="nouvImg" src="assets/img/lentille.jpg" />
+              <p>
+                En février 2017, Sony a déposé un brevet, validé par les
+                Etats-Unis, pour développer des
+                <em
+                  >lentilles de contact capable de prendre des photos ou
+                  vidéo.</em
+                ><br />
+                Sony n'est pas le seul sur le marché : Samsung conceptionne
+                également dans ce domaine.
+              </p>
+              Source :
+              <a
+                href="https://www.wedemain.fr/Ces-lentilles-de-contact-intelligentes-transforment-vos-yeux-en-appareil-photo_a2625.html"
+                >webdemain.fr</a
+              >
+            </article>
+            <article>
+              <h4>Les lunettes FaceBook</h4>
+              <img class="nouvImg" src="assets/img/lunette-fb.png" />
+              <p>
+                Ces lunettes pourraient être
+                <em>proposés au public courant 2020.</em> Elles seront capable
+                d'interposer des notifications ou environnement numérique à la
+                réalité. <br />En 2017, Mark Zuckerberg affirmait au site Recode
+                qu’il faudrait probablement attendre cinq à sept ans pour que
+                des lunettes de réalité augmentée véritablement convaincantes
+                puissent être créées. Il semblerait donc que les efforts et les
+                ressources investis dans la recherche aient permis d’accélèrer
+                le processus.<br />La force de ses lunettes est son poids :
+                tandis que les lunttes Magic Leap, des concurrents du marché,
+                pèse près de <em>300 grammes</em>, il semblerait que les
+                lunettes Facebook ne dépassent pas les <em>70 grammes.</em>
+              </p>
+              Source :
+              <a
+                href="https://www.realite-virtuelle.com/realite-augmentee-lunettes-facebook"
+                >realite-virtuelle.com</a
+              >
+            </article>
+          </div>
+          <div class="col-lg-10 col-lg-offset-1">
+            <div class="contentArticle">
+              <article>
+                <h4>Tesla Suit</h4>
+                <img class="nouvImg" src="assets/img/tesla-suit.jpg" />
+                <p>
+                  La réalité virtuelle passe une nouvelle étape. Il existe déjà
+                  des gants, des colliers, des capteurs sur le torse, mais pas
+                  de combinaison complète aussi aboutie. La Tesla Suit permet de
+                  <em>créer des changements de températures</em> selon des zones
+                  précises du corps. Vous vous retrouvez plongé dans l’univers
+                  visuel, mais aussi physique d'un jeu.<br /><em
+                    >Deux types d’électrostimulations</em
+                  >
+                  composent la tenue. La première stimule le muscle pour tendre
+                  certaines zones musculaires. Tandis que la seconde active des
+                  décharges électriques sur la surface de la peau. L’assemblage
+                  de plusieurs électrostimulations à un rythme précis permet de
+                  <em>simuler une collision</em> sans faire de dommage physique.
+                  Il est aussi possible de
+                  <em
+                    >donner la sensation d’un liquide, d’un gaz ou d’un
+                    fluide</em
+                  >.Le changement de température peut aller jusqu’à 20°C. On
+                  peut donc imaginer être touché par du feu au niveau des jambes
+                  et ressentir une sensation de chaleur, sans jamais qu’elle
+                  soit .<br /><br />La Tesla Suit était lancée sur Kickstarter,
+                  mais a été obligé de fermer pour manque de fonds. De retour au
+                  CES 2018 ils ont pu démontrer que leur projet tenait la route
+                  et attirer de nouveaux investisseurs. Pour le moment la
+                  combinaison est destinée au marché professionnel avec l’envoi
+                  de premiers prototypes. Elle devrait toutefois être lancée
+                  pour le grand public d’ici à <em>2019</em> pour un
+                  <em>prix avoisinant les 400 euros.</em>
                 </p>
-                <img id="graphique-image" src="assets/img/graphique-lang.jpg">
-<!--                <div id="graphique-langage"></div>-->
-                </div>
-                    
-                </div>
+                Source :
+                <a
+                  href="https://www.realite-virtuelle.com/tesla-suit-combinaison-haptique"
+                  >realite-virtuelle.com</a
+                >
+              </article>
+              <article>
+                <h4>Le premier GPS en RA</h4>
+                <img class="nouvImg" src="assets/img/GPS.jpg" />
+                <p>
+                  Lors du CES 2018, le développeur suisse WayRay a présenté le
+                  tout premier véritable GPS en réalité augmentée : le NAVION.
+                  Le dispositif permettra de
+                  <em
+                    >montrer l’itinéraire, certains détails du trajet, mais
+                    aussi repérer les dangers sur la route.</em
+                  >
+                  <br />Le pare-brise devient l’affichage en réalité augmentée.
+                  Cela lui permet de projeter des informations sur la route à un
+                  mètre devant le véhicule jusqu’à l’infini, avec une grande
+                  précision. Pour interagir avec : des commandes vocales et des
+                  gestes de la main ont été ajoutés.
+                  <em>Le but est de sécuriser le conducteur au maximum</em>,
+                  sans qu’il détache son regard de la route avec la navigation
+                  en réalité augmentée.Le prix du NAVION n’a pas été dévoilé
+                  officiellement, mais le PDG du groupe écrit dans un tweet
+                  qu’il se situera entre <em>250 et 500 dollars.</em>
+                </p>
+                Source :
+                <a
+                  href="https://www.realite-virtuelle.com/gps-realite-augmentee"
+                  >realite-virtuelle.com</a
+                >
+              </article>
             </div>
-        </section>
-        <section id="nouveaute">
-            <div class="col-lg-10 col-lg-offset-1">
-                <h2 class="partie" data-aos="fade-up">IV) Les nouveautés du domaine</h2>
-                <div class="contentArticle">
-                    <article data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="top-center">
-                        <h4>Lentilles connectés de Sony</h4>
-                        <img class="nouvImg" src="assets/img/lentille.jpg" />
-                        <p>En février 2017, Sony a déposé un brevet, validé par les Etats-Unis, pour développer des <em>lentilles de contact capable de prendre des photos ou vidéo.</em><br/> Sony n'est pas le seul sur le marché : Samsung conceptionne également dans ce domaine.</p>
-                        Source : <a href="https://www.wedemain.fr/Ces-lentilles-de-contact-intelligentes-transforment-vos-yeux-en-appareil-photo_a2625.html">webdemain.fr</a>
-                    </article>
-                    <article data-aos="flip-right" data-aos-duration="1500" data-aos-anchor-placement="top-center">
-                        <h4>Les lunettes FaceBook</h4>
-                        <img class="nouvImg" src="assets/img/lunette-fb.png" />
-                        <p>Ces lunettes pourraient être <em>proposés au public courant 2020.</em> Elles seront capable d'interposer des notifications ou environnement numérique à la réalité. <br />En 2017, Mark Zuckerberg affirmait au site Recode qu’il faudrait probablement attendre cinq à sept ans pour que des lunettes de réalité augmentée véritablement convaincantes puissent être créées. Il semblerait donc que les efforts et les ressources investis dans la recherche aient permis d’accélèrer le processus.<br />La force de ses lunettes est son poids : tandis que les lunttes Magic Leap, des concurrents du marché, pèse près de <em>300 grammes</em>, il semblerait que les lunettes Facebook ne dépassent pas les <em>70 grammes.</em></p>
-                        Source : <a href="https://www.realite-virtuelle.com/realite-augmentee-lunettes-facebook">realite-virtuelle.com</a>
-                    </article>
-                    <article data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="top-center">
-                        <h4>Tesla Suit</h4>
-                        <img class="nouvImg" src="assets/img/tesla-suit.jpg" />
-                        <p>La réalité virtuelle passe une nouvelle étape. Il existe déjà des gants, des colliers, des capteurs sur le torse, mais pas de combinaison complète aussi aboutie. La Tesla Suit permet de <em>créer des changements de températures</em> selon des zones précises du corps. Vous vous retrouvez plongé dans l’univers visuel, mais aussi physique d'un jeu.<br/><em>Deux types d’électrostimulations</em> composent la tenue. La première stimule le muscle pour tendre certaines zones musculaires. Tandis que la seconde active des décharges électriques sur la surface de la peau. L’assemblage de plusieurs électrostimulations à un rythme précis permet de <em>simuler une collision</em> sans faire de dommage physique. Il est aussi possible de <em>donner la sensation d’un liquide, d’un gaz ou d’un fluide</em>.Le changement de température peut aller jusqu’à 20°C. On peut donc imaginer être touché par du feu au niveau des jambes et ressentir une sensation de chaleur, sans jamais qu’elle soit .<br/><br/>La Tesla Suit était lancée sur Kickstarter, mais a été obligé de fermer pour manque de fonds. De retour au CES 2018  ils ont pu démontrer que leur projet tenait la route et attirer de nouveaux investisseurs. Pour le moment la combinaison est destinée au marché professionnel avec l’envoi de premiers prototypes. Elle devrait toutefois être lancée pour le grand public d’ici à <em>2019</em> pour un <em>prix avoisinant les 400 euros.</em></p>
-                        Source : <a href="https://www.realite-virtuelle.com/tesla-suit-combinaison-haptique">realite-virtuelle.com</a>
-                    </article>
-                </div>
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="contentArticle">
-                        <article data-aos="flip-right" data-aos-duration="1500" data-aos-anchor-placement="top-center">
-                            <h4>Le premier GPS en RA</h4>
-                            <img class="nouvImg" src="assets/img/GPS.jpg" />
-                            <p>Lors du CES 2018, le développeur suisse WayRay a présenté le tout premier véritable GPS en réalité augmentée : le NAVION. Le dispositif permettra de <em>montrer l’itinéraire, certains détails du trajet, mais aussi repérer les dangers sur la route.</em> <br/>Le pare-brise devient l’affichage en réalité augmentée. Cela lui permet de projeter des informations sur la route à un mètre  devant le véhicule jusqu’à l’infini, avec une grande précision. Pour interagir avec  : des commandes vocales et des gestes de la main ont été ajoutés. <em>Le but est de sécuriser le conducteur au maximum</em>, sans qu’il détache son regard de la route avec la navigation en réalité augmentée.Le prix du NAVION n’a pas été dévoilé officiellement, mais le PDG du groupe écrit dans un tweet qu’il se situera entre <em>250 et 500 dollars.</em>
-                            </p>
-                            Source : <a href="https://www.realite-virtuelle.com/gps-realite-augmentee">realite-virtuelle.com</a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="interet">
-            <div class="col-lg-8 col-lg-offset-1">
-                <h2 class="partie">V) Intérets de cette technologie dans le monde professionnel</h2>
-                <div class="content">
-                    <p>La réalité virtuelle ne se limite pas aux divertissements comme beaucoup de personnes le pensent. Voici quelques exemples d'utilisations diverses de la réalité virtuelle.</p>
-                    <h3>Application dans la médecine</h3>
-                    <p><strong>La VR  contre la douleur :</strong><br/>
-                        Le patient étant plongé dans un autre monde, il est oublie la réalité et son quotidien. En trompant ainsi le cerveau, la réalité virtuelle permet aux patients <em>« d’oublier » la douleur</em>. De nombreuses expériences l’ont prouvé, l’immersion, grâce à un casque de réalité virtuelle, permet aux patients de s’évader et au cerveau de <em>ne plus ressentir de douleur ou tout au moins de l’atténuer de façon notable</em>. La douleur étant en grande partie bien davantage ressentie lorsque le cerveau se focalise dessus et que le stress lié à la souffrance est présent, le fait de s’évader et occuper le cerveau dans un monde virtuel lui fait donc oublier la souffrance.
-                    </p>
-                    <p><strong>La VR  contre l'addiction :</strong><br/>
-                        <em>Accompagné d’un programme de désintoxication</em>, la réalité virtuelle permet aux psychiatres et psychologues de confronter graduellement les patients à des situations de tentation de rechute.<br/>La personne tentant de se libérer de sa dépendance est, par exemple, confrontée en réalité virtuelle à une fête dans laquelle l’alcool ou la drogue coule à flot. Pour la dépendance à la cigarette, le principe est le même. <em>Le patient est confronté à différentes situations susceptibles de générer un désir</em> comme par exemple voir d’autres fumeurs, une ambiance festive, etc.
-                    </p>
-                    <h3>Application dans l'immobilier</h3>
-                    <p>À mesure qu’elle évolue, la réalité virtuelle transforme progressivement l’industrie de l’immobilier. Cette technologie révolutionnaire bouleverse les traditions du secteur, en permettant par exemple de <em>visiter des propriétés à travers un casque de réalité virtuelle</em> sans avoir besoin de se déplacer physiquement.<br/>Grâce à la réalité virtuelle, les agents immobiliers n’ont plus besoin d’amener leurs clients visiter les maisons qu’ils ont à vendre. Il est possible de proposer des visites virtuelles de chaque propriété depuis l’agence, ou même depuis le domicile du client. La réalité virtuelle permet en effet de <em>reconstituer les propriétés dans les moindres détails grâce aux techniques de photographie à 360°</em>. Chaque pièce, chaque meuble, chaque élément peuvent être modélisé de manière photo-réaliste. Les utilisateurs peuvent visualiser une maison et les vues qu’offre chacune de ses fenêtres à travers un casque de réalité virtuelle. De fait, l’immobilier VR permet de gagner un temps précieux, aussi bien pour les clients que pour les agents qui peuvent aussi se focaliser sur les propriétés les plus rentables. <em>Ce gain de temps se présente comme un avantage compétitif pour les agences immobilières qui s’en remettent à la VR.</em><br/>Par ailleurs, l’immobilier VR permet de pré-visualiser la décoration d’une propriété. Les clients peuvent <em>scanner des meubles à l’aide d’un scanner 3D, pour ensuite les implémenter à la modélisation 3D à 360 degrés de la propriété</em>. Ainsi, il est possible d’apercevoir ce que donnera un élément de décoration spécifique dans le salon d’une maison particulière, si les dimensions d’un meuble sont adaptées, ou même à quoi ressemblera le salon une fois peint dans une autre couleur.</p>
-                    <h3>Application dans l'éducation</h3>
-                    <p>Aujourd’hui, de nombreuses applications VR sont disponibles à destination des élèves.<br/>Pour les cours d’Histoire, il est possible de <em>s’immerger au sein de sites historiques endommagés ou disparus</em> grâce à des reconstitutions virtuelles comme la Rome d’il y a 2000 ans. Mais également de <em>se plonger au cœur d’évènements historiques comme le débarquement allié en Normandie.</em><br />Pour les sciences, la VR regorge de multiples applications pour faire comprendre aux élèves les mécanismes scientifiques, parfois compliqué à saisir sur un simple manuel scolaire. L’application Star Chart permet, par exemple, <em>d’explorer l’univers tout en apprenant davantage sur les constellations</em>.<br />L’application InMind, quant à elle, propose un <em>« voyage » au cœur du cerveau</em> pour permettre de comprendre l’anatomie de cette partie du corps. Les neurones et le tissu cérébral n’ont jamais paru aussi réalistes.<br /> Source : <a href="https://www.lamobylettejaune.com">www.lamobylettejaune.com</a>
-                    </p>
-                    <h3>Application dans l'armée</h3>
-                    <p><strong>La VR  contre la douleur :</strong><br/>
-                        La réalitée augmentée est utilisée de plus en plus dans l'armée, que ce soit lors de maintenance d'équipement industriel, ou encore en équipement pour les soldats. En effet, le 29 novembre 2018, l'armée américaine à commander des <em>lunettes de réalitée augmentée HoloLens</em> à Microsoft pour équiper des soldats. Grâce à ce système, les soldats auraient en permanence accès à <em>la carte du terrain</em> ou à des fonctionnalités comme la vision infrarouge.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="source">
-            <div class="col-lg-8 col-lg-offset-1" >
-                <h3 data-aos="zoom-out">Sources :</h3>
-                <div class="content" data-aos="zoom-out">
-                    Les sites internets fréquemment regardés et utilisés comme source pour cette veille sont les suivants :<br />
-                    <ul>
-                        <li><a href="http://www.linternaute.fr" target="_blank">www.linternaute.fr</a></li>
-                        <li><a href="http://www.360natives.com" target="_blank">www.360natives.com</a></li>
-                        <li><a href="https://www.realite-virtuelle.com" target="_blank">www.realite-virtuelle.com</a></li>
-                        <li><a href="https://www.usine-digitale.fr/" target="_blank">hwww.usine-digitale.fr</a></li>
-                        <li><a href="https://www.presse-citron.net" target="_blank">www.presse-citron.net</a></li>
-                        <li><a href="https://www.futura-sciences.com" target="_blank">www.futura-sciences.com</a></li>
-                        <br/>
-                        <li><a href="https://www.immersion.fr/realite-virtuelle-realite-mixte-realite-augmentee/" target="_blank">www.immersion.fr/realite-virtuelle-realite-mixte-realite-augmentee/</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <a href="https://www.facebook.com/gregor.loquet" target="_blank"><img class="footerImg" src="assets/img/iconeFB.png" /></a>
-        </footer>
+          </div>
+        </div>
+      </section>
+      <section id="interet">
+        <div class="col-lg-8 col-lg-offset-1">
+          <h2 class="partie">
+            V) Intérets de cette technologie dans le monde professionnel
+          </h2>
+          <div class="content">
+            <p>
+              La réalité virtuelle ne se limite pas aux divertissements comme
+              beaucoup de personnes le pensent. Voici quelques exemples
+              d'utilisations diverses de la réalité virtuelle.
+            </p>
+            <h3>Application dans la médecine</h3>
+            <p>
+              <strong>La VR contre la douleur :</strong><br />
+              Le patient étant plongé dans un autre monde, il est oublie la
+              réalité et son quotidien. En trompant ainsi le cerveau, la réalité
+              virtuelle permet aux patients <em>« d’oublier » la douleur</em>.
+              De nombreuses expériences l’ont prouvé, l’immersion, grâce à un
+              casque de réalité virtuelle, permet aux patients de s’évader et au
+              cerveau de
+              <em
+                >ne plus ressentir de douleur ou tout au moins de l’atténuer de
+                façon notable</em
+              >. La douleur étant en grande partie bien davantage ressentie
+              lorsque le cerveau se focalise dessus et que le stress lié à la
+              souffrance est présent, le fait de s’évader et occuper le cerveau
+              dans un monde virtuel lui fait donc oublier la souffrance.
+            </p>
+            <p>
+              <strong>La VR contre l'addiction :</strong><br />
+              <em>Accompagné d’un programme de désintoxication</em>, la réalité
+              virtuelle permet aux psychiatres et psychologues de confronter
+              graduellement les patients à des situations de tentation de
+              rechute.<br />La personne tentant de se libérer de sa dépendance
+              est, par exemple, confrontée en réalité virtuelle à une fête dans
+              laquelle l’alcool ou la drogue coule à flot. Pour la dépendance à
+              la cigarette, le principe est le même.
+              <em
+                >Le patient est confronté à différentes situations susceptibles
+                de générer un désir</em
+              >
+              comme par exemple voir d’autres fumeurs, une ambiance festive,
+              etc.
+            </p>
+            <h3>Application dans l'immobilier</h3>
+            <p>
+              À mesure qu’elle évolue, la réalité virtuelle transforme
+              progressivement l’industrie de l’immobilier. Cette technologie
+              révolutionnaire bouleverse les traditions du secteur, en
+              permettant par exemple de
+              <em
+                >visiter des propriétés à travers un casque de réalité
+                virtuelle</em
+              >
+              sans avoir besoin de se déplacer physiquement.<br />Grâce à la
+              réalité virtuelle, les agents immobiliers n’ont plus besoin
+              d’amener leurs clients visiter les maisons qu’ils ont à vendre. Il
+              est possible de proposer des visites virtuelles de chaque
+              propriété depuis l’agence, ou même depuis le domicile du client.
+              La réalité virtuelle permet en effet de
+              <em
+                >reconstituer les propriétés dans les moindres détails grâce aux
+                techniques de photographie à 360°</em
+              >. Chaque pièce, chaque meuble, chaque élément peuvent être
+              modélisé de manière photo-réaliste. Les utilisateurs peuvent
+              visualiser une maison et les vues qu’offre chacune de ses fenêtres
+              à travers un casque de réalité virtuelle. De fait, l’immobilier VR
+              permet de gagner un temps précieux, aussi bien pour les clients
+              que pour les agents qui peuvent aussi se focaliser sur les
+              propriétés les plus rentables.
+              <em
+                >Ce gain de temps se présente comme un avantage compétitif pour
+                les agences immobilières qui s’en remettent à la VR.</em
+              ><br />Par ailleurs, l’immobilier VR permet de pré-visualiser la
+              décoration d’une propriété. Les clients peuvent
+              <em
+                >scanner des meubles à l’aide d’un scanner 3D, pour ensuite les
+                implémenter à la modélisation 3D à 360 degrés de la
+                propriété</em
+              >. Ainsi, il est possible d’apercevoir ce que donnera un élément
+              de décoration spécifique dans le salon d’une maison particulière,
+              si les dimensions d’un meuble sont adaptées, ou même à quoi
+              ressemblera le salon une fois peint dans une autre couleur.
+            </p>
+            <h3>Application dans l'éducation</h3>
+            <p>
+              Aujourd’hui, de nombreuses applications VR sont disponibles à
+              destination des élèves.<br />Pour les cours d’Histoire, il est
+              possible de
+              <em
+                >s’immerger au sein de sites historiques endommagés ou
+                disparus</em
+              >
+              grâce à des reconstitutions virtuelles comme la Rome d’il y a 2000
+              ans. Mais également de
+              <em
+                >se plonger au cœur d’évènements historiques comme le
+                débarquement allié en Normandie.</em
+              ><br />Pour les sciences, la VR regorge de multiples applications
+              pour faire comprendre aux élèves les mécanismes scientifiques,
+              parfois compliqué à saisir sur un simple manuel scolaire.
+              L’application Star Chart permet, par exemple,
+              <em
+                >d’explorer l’univers tout en apprenant davantage sur les
+                constellations</em
+              >.<br />L’application InMind, quant à elle, propose un
+              <em>« voyage » au cœur du cerveau</em> pour permettre de
+              comprendre l’anatomie de cette partie du corps. Les neurones et le
+              tissu cérébral n’ont jamais paru aussi réalistes.<br />
+              Source :
+              <a href="https://www.lamobylettejaune.com"
+                >www.lamobylettejaune.com</a
+              >
+            </p>
+            <h3>Application dans l'armée</h3>
+            <p>
+              <strong>La VR contre la douleur :</strong><br />
+              La réalitée augmentée est utilisée de plus en plus dans l'armée,
+              que ce soit lors de maintenance d'équipement industriel, ou encore
+              en équipement pour les soldats. En effet, le 29 novembre 2018,
+              l'armée américaine à commander des
+              <em>lunettes de réalitée augmentée HoloLens</em> à Microsoft pour
+              équiper des soldats. Grâce à ce système, les soldats auraient en
+              permanence accès à <em>la carte du terrain</em> ou à des
+              fonctionnalités comme la vision infrarouge.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="source">
+        <div class="col-lg-8 col-lg-offset-1">
+          <h3 data-aos="zoom-out">Sources :</h3>
+          <div class="content" data-aos="zoom-out">
+            Les sites internets fréquemment regardés et utilisés comme source
+            pour cette veille sont les suivants :<br />
+            <ul>
+              <li>
+                <a href="http://www.linternaute.fr" target="_blank"
+                  >www.linternaute.fr</a
+                >
+              </li>
+              <li>
+                <a href="http://www.360natives.com" target="_blank"
+                  >www.360natives.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.realite-virtuelle.com" target="_blank"
+                  >www.realite-virtuelle.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.usine-digitale.fr/" target="_blank"
+                  >hwww.usine-digitale.fr</a
+                >
+              </li>
+              <li>
+                <a href="https://www.presse-citron.net" target="_blank"
+                  >www.presse-citron.net</a
+                >
+              </li>
+              <li>
+                <a href="https://www.futura-sciences.com" target="_blank"
+                  >www.futura-sciences.com</a
+                >
+              </li>
+              <br />
+              <li>
+                <a
+                  href="https://www.immersion.fr/realite-virtuelle-realite-mixte-realite-augmentee/"
+                  target="_blank"
+                  >www.immersion.fr/realite-virtuelle-realite-mixte-realite-augmentee/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <a href="https://www.facebook.com/gregor.loquet" target="_blank"
+          ><img class="footerImg" src="assets/img/iconeFB.png"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/gr%C3%A9gor-loquet-a4262b14b/"
+          target="_blank"
+          ><img class="footerImg" src="assets/img/iconeLI.png"
+        /></a>
+      </footer>
     </div>
-    
-    
-<!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/quote.js"></script>
-        <a href="#" class="scrollToTop"><i class="fa fa-caret-up fa-4x" aria-hidden="true"></i></a>
-        <script>
-        //Code de la Timeline
-        function isElementInViewport(el) {
-          var rect = el.getBoundingClientRect();
-          return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-          );
-        }</script>
-        <script>
-        var items = document.querySelectorAll(".timeline li");
 
-        // code for the isElementInViewport function
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/quote.js"></script>
+    <a href="#" class="scrollToTop"
+      ><i class="fa fa-caret-up fa-4x" aria-hidden="true"></i
+    ></a>
+    <script>
+      //Code de la Timeline
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+    </script>
+    <script>
+      var items = document.querySelectorAll(".timeline li");
 
-        function callbackFunc() {
-          for (var i = 0; i < items.length; i++) {
-            if (isElementInViewport(items[i])) {
-              items[i].classList.add("in-view");
-            }
+      // code for the isElementInViewport function
+
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
           }
         }
+      }
 
-        window.addEventListener("load", callbackFunc);
-        window.addEventListener("scroll", callbackFunc);
-        </script>
-        <script>
-            $(document).ready(function(){
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+    </script>
+    <script>
+      $(document).ready(function () {
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $(".scrollToTop").fadeIn();
+          } else {
+            $(".scrollToTop").fadeOut();
+          }
+        });
 
-                //Check to see if the window is top if not then display button
-                $(window).scroll(function(){
-                    if ($(this).scrollTop() > 100) {
-                        $('.scrollToTop').fadeIn();
-                    } else {
-                        $('.scrollToTop').fadeOut();
-                    }
-                });
-
-                //Click event to scroll to top
-                $('.scrollToTop').click(function(){
-                    $('html, body').animate({scrollTop : 0},800);
-                    return false;
-                });
-
-            });
-        </script>
-</body>
+        //Click event to scroll to top
+        $(".scrollToTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -3,84 +3,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/*Veille */
-#source{
-     min-height: 500px;
-  padding-top: 60px;
-/*  border-top: white solid 2px;*/
-    background-color: #006ba8;
-/*    background-image: -webkit-linear-gradient(100deg, #006ba8 -30%, #000000 50%);*/
-    
-/*    013A6B*/
-}
-
-/*Article nouveautés*/
-.nouvImg{
-    max-height: 200px;
-    width: 100%;
-}
-.contentArticle{
-    display: flex;
-    justify-content: center;
-/*    flex-wrap: wrap;*/
-}
-article{
-/*    border: black dotted 1px;*/
-    margin: 50px;
-    padding: 10px;
-    border-radius: 10%;
-    width: 35%;
-    height: 450px;
-    overflow: auto;
-}
-article h4{
-    text-decoration: underline;
-}
-article em, .content em{
-    color: #62d140;
-}
-article:hover{
-/*    background-color: #006ba8;*/
-/*
-    -webkit-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
-*/
-/*    opacity: 0.8;*/
-    -webkit-transform:scale(1.10); /* Safari and Chrome */
-    -moz-transform:scale(1.10); /* Firefox */
-    -ms-transform:scale(1.10); /* IE 9 */
-    -o-transform:scale(1.10); /* Opera */
-     transform:scale(1.10);
-}
-article::-webkit-scrollbar {
-    width: 12px;
-    
-}
- 
-article::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    
-}
- 
-article::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-    background-color: white;
-}
-
-
-footer{
-    display: flex;
-    background-color: black;
-    justify-content: center;
-}
-.footerImg{
-    height: 50px;
-    width: 50px;
-}
-
 
 /* Section 1 */
 video#bgvid {
@@ -88,76 +10,19 @@ video#bgvid {
   min-width: 100%;
   width: auto; height: auto; z-index: -100;
 }
-#section1 h1{
-}
-#section2{
+#section1{
   min-height: 700px;
   margin-top: 900px;
   background-color: #161415;
   padding-top: 20px;
   border-top: white solid 2px;
 }
-#nouveaute{
-    height: 1000px;
-    padding-top: 60px;
-/*  border-top: white solid 2px;*/
-    background-color: #006ba8;
-    background-image: -webkit-linear-gradient(75deg, #000000 50%, #006ba8 50%);
-}
-#interet{
-    height: 1250px;
-    padding-top: 60px;
-/*  border-top: white solid 2px;*/
-    background-color: #006ba8;
-    background-image: -webkit-linear-gradient(100deg, #006ba8 30%, #000000 30%);
-}
-#interet strong{
-/*    text-decoration: underline;*/
-    font-size: 20px;
-}
-#interet h3{
-    font-size: 30px;
-    text-decoration: underline;
-}
-.section7 .row{
-    height: 500px;
-}
-#section5{
-  min-height: 900px;
-  background-color: #161415;
-}
+
 #section3{
   min-height: 900px;
   background-color: #161415;
 }
 
-#section1Veille{
-    min-height: 900px;
-  margin-top: 900px;
-  background-color: #161415;
-  padding-top: 20px;
-  border-top: white solid 2px;
-}
-#section2Veille{
-    padding-top: 5%;
-    min-height: 900px;
-    background-color: #161415;
-    background-image: -webkit-linear-gradient(100deg, #006ba8 50%, #000000 50%);
-}
-/*
-.partie2{
-    padding-top: 10%;
-}
-*/
-.contentVeille{
-    display: flex;
-}
-#section3Veille{
-  background-color: #161415;
-}
-#separatorVideo{
-    min-height: 400px;
-}
 .container-fluid{
   padding: 0px;
 }
@@ -512,7 +377,7 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   border-left:4px solid #19e7da;
   transition:all 250ms ease-in-out;
 }
-#section5 h2{
+#section3 h2{
   text-align: center;
 }
 .modal-content{
@@ -601,62 +466,6 @@ blockquote {
     border-radius: 10px;
     box-shadow: 5px 5px 5px;
 }
-.sectionTitle{
-    color : white;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 30px;
-}
-#ImageCasque{
-/*    background-image: url(../img/oculus-rift.png);*/
-    width: 400px;
-/*    background-size: 100% 100%;*/
-    margin-right: 20px;
-    margin-top: 50px;
-    height: 250px;
-/*
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px;
-*/
-}
-#graphique-image{
-    width: 400px;
-    background-size: 100% 100%;
-    margin-right: 20px;
-    margin-top: 50px;
-    height: 350px;
-    border-radius: 10px;
-    margin-top: -50px;
-}
-.partie{
-    text-decoration: underline;
-    color: #1fb6e0;
-    font-size: 40px;
-    font-family: Verdana;
-}
-.contentVeille{
-    display: flex;
-    margin-top : 35px;
-    font-size: 15px;
-}
-
-.starter{
-    margin-top: 75px;
-    font-size: 25px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Lazy Load Styles */
 .card-image {
@@ -682,12 +491,12 @@ blockquote {
 
 
 /* Layout Styles */
-.section8{
-  min-height: 900px;
+.section5{
+  min-height: 950px;
   background-color: #161415;
   padding-top: 5%;
 }
-.section8 img{
+.section5 img{
   height: 300px;
   width: 300px;
 }
@@ -731,4 +540,14 @@ blockquote {
 
 .card-description > p {
 	margin: 0;
+}
+
+footer{
+  display: flex;
+  background-color: black;
+  justify-content: center;
+}
+.footerImg{
+  height: 50px;
+  width: 50px;
 }
