@@ -156,7 +156,7 @@
               poursuivre ces études au Canada. Après avoir souhaité me
               spécialiser dans la conception de logiciel, je me dirige désormais
               majoritairement vers un poste de développeur Web back-end. Bien
-              que je dispose également de Compétences liées au front-end, ce
+              que je dispose également de compétences liées au front-end, ce
               domaine m'intéresse moins.
             </p>
           </div>
@@ -1155,8 +1155,100 @@
       </section>
 
       <section id="section4">
-        <h2 class="titreProjet">Projets</h2>
-        <section id="timelineProjets">
+        <section class="visible-sm visible-xs">
+          <div class="container">
+            <div class="row">
+              <ul id="toggle-view">
+                <li>
+                  <div class="listHeading">Divinity</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Ce projet consiste à créer un site internet regroupant des articles qui contiennent des informations détaillées à propos de différents mods du jeu Divinity : Original Sin 2. Ce site permettra également aux utilisateurs de créer un compte pour commenter et intéragir avec les articles, ainsi qu'utiliser d'autres fonctions qui seront développées ultérieurement.
+                            La création de ce projet est effectuée par un ami s'occupant principalement du front-end, et moi-même m'occupant du back-end. Technologiquement parlant, le site utilise un serveur en python utilisant les librairies Flask et sqlAlchemy et une base de données MySQL. (En cours)</p>
+                        </div>
+                        <div class="col-md-6">
+                          <img src="https://fillmurray.com/g/300/300" alt="" />
+                        </div>
+          
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="listHeading">Voyago</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <p>Voyago est une application android réalisée en Kotlin à l'Université. Il s'agit d'une application de rencontre permettant à des inconnus souhaitant voyager au même endroit de se rencontrer et voyager ensemble.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="listHeading">
+                    Articles communautaires</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <p> Un site internet complet de création et partage d'articles avec Python Flask, Docker et MySql réalisé pour un cours universitaire. (Lien) : Permet la création de compte, la création d'articles si connectés, l'ajout de commentaires et de réactions aux articles et dispose des pages de modérations pour les administrateurs.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="listHeading">Jeu de rôle</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <p>Voyago est une application android réalisée en Kotlin à l'Université. Il s'agit d'une application de rencontre permettant à des inconnus souhaitant voyager au même endroit de se rencontrer et voyager ensemble.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="listHeading">
+                    C++</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <p> Durant les cours universitaires, j'ai été ammené à développer divers petits programmes en C++ dans le but de travailler l'algorithmie et d'apprendre le fonctionnement de certaines options tels que les Threads.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="listHeading">
+                    E-Commerce</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <p>Site d'e-commerce mais uniquement le front end HTML / CSS + la gestion des favoris et du panier en Javascript. <a href="https://github.com/Geruco/ProjetWebUqac" target="_blank">Lien</a>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="listHeading">
+                    Alternance</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <p>Durant mon année d'alternance, j'ai créé divers composants éditables en html et Javascript natifs tels qu'une carte interactive ou des quizs. J'ai également créé un site internet fonctionnant entièrement avec le Javascript pour l'affichage des différentes pages.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="listHeading">
+                    Tchat</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <p>Durant le stage de 1ere année de mon BTS, j'ai travaillé sur le développement d'un tchat en application web avec un serveur Websocket en python et un système d'authentification utilisant le service Keycloak.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="listHeading">
+                    Rendez-vous</div>
+                  <span>+</span>
+                  <div class="panel">
+                    <p>Site internet HTML / CSS / PHP / MySql de prise de rendez-vous avec calendrier interactif et création de compte utilisateur + application mobile en Java sur Android Studio permettant de consulter et annuler ses rendez-vous. Ce site et cette application ont été developpés en tant que projet de fin d'études de mon BTS.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="timelineProjets" class="hidden-sm hidden-xs">
+          <h2 class="titreProjet">Projets</h2>
           <div class="tl-item">
             <div class="tl-bg" style="background-image: url(assets/img/Divinity.jpg)"></div>
                 <div class="tl-year">
@@ -1175,7 +1267,7 @@
                     principalement du front-end, et moi-même m'occupant du back-end.
                     Technologiquement parlant, le site utilise un serveur en python
                     utilisant les librairies Flask et sqlAlchemy et une base de
-                    données MySQL. (En cours)</p>
+                    données MySQL. (En cours)
                 </div>
             
               </div>
@@ -1504,6 +1596,18 @@
           $("html, body").animate({ scrollTop: 0 }, 800);
           return false;
         });
+
+        $('#toggle-view li').click(function() {
+            var text = $(this).children('div.panel');
+
+            if (text.is(':hidden')) {
+              text.slideDown('200');
+              $(this).children('span').html('-');
+            } else {
+              text.slideUp('200');
+              $(this).children('span').html('+');
+            }
+          });
       });
     </script>
   </body>
