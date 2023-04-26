@@ -3,6 +3,58 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Arrows start */
+body {
+  background:#0b1d2a;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 3px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
 
 /* Section 1 */
 video#bgvid {
@@ -15,6 +67,7 @@ video#bgvid {
   margin-top: 900px;
   background-color: #161415;
   padding-top: 20px;
+  padding-bottom: 20px;
   border-top: white solid 2px;
 }
 
@@ -529,7 +582,7 @@ blockquote {
 .card-description {
 	display: block;
 	padding: 1em 0.5em;
-	color: #515151;
+	color: #006ba8;
 	text-decoration: none;
 }
 

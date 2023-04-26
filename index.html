@@ -97,7 +97,7 @@
                   >Passions</a
                 >
               </li>
-              <li><a href="veille.html">Veille technologique</a></li>
+              <li><a href="veille.html">Veille technologique <span style="color: orange">/!\</span></a></li>
               <!--            <li><a href="" data-toggle="modal" data-target="#modalcontact">Contact</a></li>-->
             </ul>
           </div>
@@ -110,9 +110,14 @@
 
     <div class="container-fluid">
       <section id="sectionVideo">
-        <video autoplay muted loop id="bgvid">
+        <video autoplay muted playsinline loop id="bgvid">
           <source id="video" src="assets/video/chamonix.mp4" type="video/mp4" />
         </video>
+        <svg class="arrows">
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
       </section>
 
       <section id="section1" data-aos="fade-up">
@@ -139,12 +144,10 @@
               passioné par l'informatique, puis un jour l'envie de créer mes
               propres logiciels et sites web m'est apparu. Mon tout premier
               travail a été de créer un site pour mon club de sport, mais je ne
-              l'ai jamais proposé, il ne me plaisait pas suffisamment. Ce
-              n'était que ma première tentative de site web. J'ai par la suite
+              l'ai jamais proposé, il ne me plaisait pas suffisamment. J'ai par la suite
               commencé divers projet personnels comme des sites internets ou des
               applications mobiles afin de pratiquer et apprendre par moi-même
-              l'utilisation de certaines technologies, mais aucun d'entre eux
-              n'ont vu le jour. Aujourd'hui, je suis en train de développer avec
+              l'utilisation de certaines technologies sans qu'aucuns ne soient montrés au public. Aujourd'hui, je suis en train de développer avec
               l'aide d'un ami un site sérieux que je compte bien déployer. Ce
               projet a pour but d'offrir une documentation précise sur des mods
               d'un jeu vidéo.
@@ -155,9 +158,8 @@
               officiellement en 2017 avec un BTS SIO option Slam avant de
               poursuivre ces études au Canada. Après avoir souhaité me
               spécialiser dans la conception de logiciel, je me dirige désormais
-              majoritairement vers un poste de développeur Web back-end. Bien
-              que je dispose également de compétences liées au front-end, ce
-              domaine m'intéresse moins.
+              majoritairement vers un poste de développeur Web back-end. Je dispose également de compétences liées au front-end, 
+              mais j'ai une préférence pour travailler sur le back-end.
             </p>
           </div>
         </div>
@@ -1408,13 +1410,13 @@
             >
               <img src="assets/img/foot%20us.jpg" alt="Psychopomp" />
             </a>
-            <a class="card-description">
+            <div class="card-description">
               <p>
                 "It's not whether you get knocked down, it's whether you get
                 up."
               </p>
               <p>Vince Lombardi</p>
-            </a>
+            </div>
           </li>
 
           <li class="card">
@@ -1425,13 +1427,13 @@
             >
               <img src="assets/img/tennis.jpg" alt="let's go" />
             </a>
-            <a class="card-description">
+            <div class="card-description">
               <p>
                 "Sometimes you have to accept that a guy played better on the
                 day than you."
               </p>
               <p>Roger Federer</p>
-            </a>
+            </div>
           </li>
 
           <li class="card">
@@ -1442,12 +1444,12 @@
             >
               <img src="assets/img/voyages.jpg" alt="The Beautiful Game" />
             </a>
-            <a class="card-description">
+            <div class="card-description">
               <p>
                 "The world is a book and those who do not travel read only one
                 page."
               </p>
-            </a>
+            </div>
           </li>
 
           <li class="card">
@@ -1458,14 +1460,14 @@
             >
               <img src="assets/img/astronomie.jpg" alt="Jane Doe" />
             </a>
-            <a class="card-description">
+            <div class="card-description">
               <p>
                 "Deux possibilités existent : soit nous sommes seuls dans
                 l'univers, soit nous ne le sommes pas. Les deux hypothèses sont
                 tout aussi effrayantes. "
               </p>
               <p>Arthur Charles Clarke</p>
-            </a>
+            </div>
           </li>
 
           <li class="card">
@@ -1476,13 +1478,13 @@
             >
               <img src="assets/img/musique-mini.jpg" alt="img25" />
             </a>
-            <a class="card-description">
+            <div class="card-description">
               <p>
                 "When I say or do something, I do it. I don’t give a damn what
                 you think. I’m doing this for me."
               </p>
               <p>Eminem</p>
-            </a>
+            </div>
           </li>
 
           <li class="card">
@@ -1493,10 +1495,36 @@
             >
               <img src="assets/img/chess.jpeg" alt="img25" />
             </a>
-            <a class="card-description">
+            <div class="card-description">
               <p>"Chess is beautiful enough to waste your life for."</p>
               <p>Hans Ree</p>
+            </div>
+          </li>
+          <li class="card">
+            <a
+              class="card-image"
+              style="background-image: url(assets/img/dice-roleplay.jpg)"
+              data-image-full="assets/img/dice-roleplay.jpg"
+            >
+              <img src="assets/img/dice-roleplay.jpg" alt="img25" />
             </a>
+            <div class="card-description">
+              <p>"Ah qu'il est grand, ah qu'il est beau, ah qu'il est fort mon ami troll du chaos !"</p>
+              <p>"Troll farceur et elfe farci", Machins de Taverne, Naheulband</p>
+            </div>
+          </li>
+          <li class="card">
+            <a
+              class="card-image"
+              style="background-image: url(assets/img/ski.jpg)"
+              data-image-full="assets/img/ski.jpg"
+            >
+              <img src="assets/img/ski.jpg" alt="Ski" />
+            </a>
+            <div class="card-description">
+              <p>"A person should have wings to carry them where their dreams go, but sometimes a pair of skis makes a good substitute. "</p>
+              <p>Hans Gmoser</p>
+            </div>
           </li>
         </ul>
         <script>
