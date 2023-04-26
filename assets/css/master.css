@@ -553,7 +553,10 @@ blockquote {
   width: 300px;
 }
 .card-list {
-	display: block;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 	margin: 1rem auto;
 	padding: 0;
 	font-size: 0;
