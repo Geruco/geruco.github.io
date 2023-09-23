@@ -701,12 +701,24 @@ h2 {
 
 #prev {
   position: absolute;
+  background-color: white !important;
+  background-image: url('../img/left-arrow.png') !important;
+  background-size: cover !important;
+  height: 30px;
+  width: 30px;
   left: 1%;
 }
+
 #next {
   position: absolute;
+  background-color: white !important;
+  background-image: url('../img/right-arrow.png') !important;
+  background-size: cover !important;
+  height: 30px;
+  width: 30px;
   right: 1%;
 }
+
 #section4 button {
   background: #aaa;
   border: 0;
@@ -757,7 +769,7 @@ h2 {
   height: 100%;
 }
 .tl-item:after {
-  background: rgb(0, 74, 117);
+  /*background: rgb(0, 74, 117);*/
   opacity: 1;
   transition: opacity 0.5s ease;
 }
