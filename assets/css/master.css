@@ -457,9 +457,9 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   position: absolute;
   bottom: -70px;
   left: -100px;
-  background-image: url('../img/Photo_cv.PNG');
+  background-image: url('../img/photo_cv.jpg');
   background-position:top;
-  background-size: contain;
+  background-size: cover;
   z-index: 10;
 }
 
@@ -505,8 +505,23 @@ blockquote {
 .describ{
   margin-top: 50px;
   font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  margin: auto 5% auto 5%;
 }
-
+.describ-text{
+  width: 90%;
+}
+.describ-contact{
+  text-overflow: clip;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid white;
+  margin: 5%;
+  padding: 3%;
+}
 
 
 .PixelEtCicero{
