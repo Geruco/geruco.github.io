@@ -712,6 +712,9 @@ footer{
 .carousel-seat.is-ref {
   order: 1;
 }
+.tl-content p{
+  font-size: 90%;
+}
 
 h2 {
   font-size: 32px;
